@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 shadow-lg">
+    <nav className="bg-[#000000ad]  border-white border-[1px] left-2 right-2 absolute z-10 top-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center m-auto md:m-0">
@@ -44,6 +44,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Schedule
+            </Link>
+            <Link
+              to="/schedule"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Brochure
             </Link>
             <Link
               to="/rules"
