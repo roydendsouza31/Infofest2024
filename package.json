@@ -14,8 +14,10 @@
     "dayjs": "^1.11.11",
     "framer-motion": "^11.2.4",
     "react": "^18.2.0",
+    "react-countdown": "^2.3.5",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
+    "react-simple-typewriter": "^5.0.1",
     "styled-components": "^6.1.11",
     "tailwind-merge": "^2.3.0"
   },

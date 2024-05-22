@@ -1,19 +1,20 @@
 import { useState } from 'react'
 import React, { Suspense, lazy } from 'react';
+import Headroom from 'react-headroom';
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home';
 import Winners from './pages/Winners';
 import Navbar from './components/Navbar';
 
 
-const Event = React.lazy(() => import('./pages/Event'))
-
-const PageNotFound = React.lazy(() => import('./pages/404'))
-const Schedule = React.lazy(() => import('./pages/Schedule'))
-const Rules = React.lazy(() => import('./pages/Rules'))
+const Event = lazy(() => import('./pages/Event'))
+const Hero = lazy(() => import('./components/Hero'))
+const PageNotFound = lazy(() => import('./pages/404'))
+const Schedule = lazy(() => import('./pages/Schedule'))
+const Rules = lazy(() => import('./pages/Rules'))
 // const About = React.lazy(() => import('./pages/About'))
 // const ContactUs = React.lazy(() => import('./pages/ContactUs'))
-const Ranking = React.lazy(() => import('./pages/Ranking'))
+const Ranking = lazy(() => import('./pages/Ranking'))
 function App() {
   const [count, setCount] = useState(0)
 
