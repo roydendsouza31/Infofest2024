@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import React, { Suspense, lazy } from 'react';
-import Headroom from 'react-headroom';
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home';
 import Winners from './pages/Winners';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 const Event = lazy(() => import('./pages/Event'))
@@ -58,6 +58,7 @@ function App() {
           </React.Suspense>
         } />
       </Routes>
+      <Footer/>
     </>
   )
 }
