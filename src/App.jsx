@@ -15,6 +15,7 @@ const Rules = lazy(() => import('./pages/Rules'))
 // const About = React.lazy(() => import('./pages/About'))
 // const ContactUs = React.lazy(() => import('./pages/ContactUs'))
 const Ranking = lazy(() => import('./pages/Ranking'))
+const about = lazy(() => import('./pages/about'))
 function App() {
   const [count, setCount] = useState(0)
 
