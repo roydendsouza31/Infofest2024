@@ -3,27 +3,8 @@
 @tailwind utilities;
 
 nav {
+  
     -webkit-clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
-    clip-path: polygon(0 0, 97% 0, 100% 30%, 100% 100%, 3% 100%, 0 69%);
-   
+    clip-path: polygon(0 0, 97% 0, 100% 54%, 100% 100%, 3% 100%, 0 69%);
 }
 
-nav a.active, a:hover{
-    text-shadow: #eae8e0 1px 0 10px;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: rgb(220, 113, 209);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    border-radius: 10px;
-  }
-  
-
-  
