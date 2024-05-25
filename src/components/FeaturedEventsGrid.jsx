@@ -3,12 +3,19 @@ import events from '../events';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/moving-border';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
 // import bgevent from '../assets/event.png'
 // import { Util } from 'leaflet';
 
 export default function FeaturedEventsGrid() {
   return (
-    <div className='bg-cover bg-center py-5 text-white'>
+    <motion.div
+     variants={fadeIn("up",0.1)}
+     initial = "hidden"
+     whileInView={"show"}
+     viewport={{once:false, ammount:0.7 }}
+     className='bg-cover bg-center py-5 text-white'>
       <h2 className='text-2xl font-semibold px-10 py-5'>Event</h2>
       <Grid>
         {events.slice(0, 5).map((event, idx) => (
@@ -21,7 +28,7 @@ export default function FeaturedEventsGrid() {
         <Link to="/events">More Events</Link>
       </Button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
