@@ -13,7 +13,7 @@ const Schedule = React.lazy(() => import('./pages/Schedule'))
 const Rules = React.lazy(() => import('./pages/Rules'))
 // const About = React.lazy(() => import('./pages/About'))
 // const ContactUs = React.lazy(() => import('./pages/ContactUs'))
-const Ranking = React.lazy(() => import('./pages/Ranking'))
+const About = React.lazy(() => import('./pages/about'))
 function App() {
   const [count, setCount] = useState(0)
 
@@ -49,6 +49,11 @@ function App() {
         <Route path='/winners' element={
           <React.Suspense fallback={<Fallback />}>
             <Winners />
+          </React.Suspense>
+        } />
+        <Route path='/about' element={
+          <React.Suspense fallback={<Fallback />}>
+            <About />
           </React.Suspense>
         } />
         <Route path='*' element={
