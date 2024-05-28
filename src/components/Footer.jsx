@@ -1,6 +1,6 @@
-import { lazy } from 'react'
+import React,{ lazy } from 'react'
 import styled from 'styled-components'
-import gulogo from '../assets/images/gu_logo_2.png'
+// import gulogo from '../assets/images/gu_logo_2.png'
 import {
   AiOutlineMail,
   AiOutlineInstagram,
@@ -10,7 +10,7 @@ import {
   AiOutlineLinkedin
 } from 'react-icons/ai'
 import { getImageURL } from '../utils/image-util'
-const Map = lazy(() => import('./Map'))
+const Map = React.lazy(() => import('./Map'))
 
 
 const ThreadsIcon = (props) =>
@@ -55,7 +55,7 @@ export default function Footer({ ...props }) {
       <div className="container">
         <div className="row">
           <div className='wrap'>
-            <img className='gu-logo' src={getImageURL('gu_logo_2.png')} alt="Goa University" />
+            {/* <img className='gu-logo' src={getImageURL('gu_logo_2.png')} alt="Goa University" /> */}
             <div>
               <h4>Goa University</h4>
               <h5>Goa Business School</h5>
