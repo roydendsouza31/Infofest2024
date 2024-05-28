@@ -42,7 +42,6 @@ const StarField = () => {
 
 const Event = () => {
   return (
-    <>
       <Canvas style={{ background: 'black' }}>
         <ambientLight intensity={2}/>
         <OrbitControls enableZoom={false}/>
@@ -52,7 +51,6 @@ const Event = () => {
         <Environment preset='sunset'/>
         <StarField />
       </Canvas>
-    </>
   )
 }
 
