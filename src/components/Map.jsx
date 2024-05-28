@@ -5,10 +5,10 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { getImageURL } from '../utils/image-util'
 
-export default function Map({ lat, lng, containerStyles }) {
+export default function Map({ lat, lng }) {
   return (
     <a href={`https://maps.google.com?q=${lat},${lng}`} target='_blank'>
-      <Container style={containerStyles}>
+      <Container >
         <MapContainer
           center={[lat, lng]}
           zoom={15}
@@ -39,11 +39,16 @@ export default function Map({ lat, lng, containerStyles }) {
 const Container = styled.div`
   height: 220px;
   padding: 5px;
-  background-color: #3b96d8;
+  background-color: gray;
 
   &, & > div {
-    clip-path: polygon(0px 0px, 0px calc(100% - 26px), 26px 100%, 100% 100%, 100% 26px, calc(100% - 26px) 0px);
-  }
+    clip-path: polygon(
+      5% 0%, 95% 0%, /* top corners */
+      100% 10%, 100% 90%, /* right corners */
+      95% 100%, 5% 100%, /* bottom corners */
+      0% 90%, 0% 10% /* left corners */
+    );
+    }
 
   & > div {
     height: 100%;
