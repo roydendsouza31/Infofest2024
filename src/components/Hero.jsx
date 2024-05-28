@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { easeInOut, motion } from 'framer-motion';
-import bg from '../assets/images/bg-city.png';
+import bg from '../assets/images/bg-city.webp';
 import dayjs from 'dayjs';
 import abdm from '../assets/images/sponsors/ABDM.webp';
 import betibacho from '../assets/images/sponsors/Beti_Bachao_Beti_Padhao.webp';
