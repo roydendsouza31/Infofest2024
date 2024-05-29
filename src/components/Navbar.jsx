@@ -60,6 +60,13 @@ const Navbar = () => {
               Rules
             </Link>
             <Link
+              to="/team"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Team
+            </Link>
+            <Link
               to="/about"
               className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
@@ -117,6 +124,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Rules
+            </Link>
+            <Link
+              to="/team"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Team
             </Link>
             <Link
               to="/about"
