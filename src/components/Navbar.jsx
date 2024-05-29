@@ -63,7 +63,14 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Rules
-            </ NavLink>
+            </NavLink>
+            <Link
+              to="/team"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Team
+            </NavLink>
             < NavLink
               to="/about"
               className="text-white text-center  px-3 py-2 rounded transition duration-300"
@@ -122,6 +129,21 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Rules
+            </NavLink>
+            <Link
+              to="/team"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Team
+            </Link>
+            <Link
+              to="/about"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              onClick={() => setIsOpen(false)}
+            >
+              About us
+            </NavLink>
             </ NavLink>
           </div>
         </div>
