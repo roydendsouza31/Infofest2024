@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/infofestlogo.png';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,69 +11,73 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#000000ad]  border-white border-[1px] left-2 right-2 absolute z-10 top-2">
+    <motion.nav
+      initial={{ y: -50 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1 }}
+      className="bg-[#000000c2] md:bg-[#000000ad] font-semibold text-md border-[#9797974d] border-[2px] left-2 right-2 fixed z-10 top-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center m-auto md:m-0">
             <img src={logo} alt="Logo" className="h-10 w-18" />
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
-            <Link
+            < NavLink
               to="/"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Home
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/event"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Event
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/ranking"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Ranking
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/schedule"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Schedule
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/schedule"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Brochure
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/rules"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Rules
-            </Link>
+            </NavLink>
             <Link
               to="/team"
               className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Our Team
-            </Link>
-            <Link
+            </NavLink>
+            < NavLink
               to="/about"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
-              About Us
-            </Link>
+              About
+            </ NavLink>
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleNavbar} className="text-gray-200 hover:text-white focus:outline-none">
@@ -90,41 +95,41 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
+            < NavLink
               to="/"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              className="text-white text-center px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               Home
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/event"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               Event
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/ranking"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               Ranking
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/schedule"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               Schedule
-            </Link>
-            <Link
+            </ NavLink>
+            < NavLink
               to="/rules"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               Rules
-            </Link>
+            </NavLink>
             <Link
               to="/team"
               className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
@@ -138,11 +143,12 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               About us
-            </Link>
+            </NavLink>
+            </ NavLink>
           </div>
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 
