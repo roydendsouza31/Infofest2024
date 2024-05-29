@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Smruthul",
+      "position": "Co-ordinator",
+      "contact": "",
+      "image": "src/assets/images/core-team/Smruthul.jpg"
+    },
+    {
+      "name": "Ayush",
+      "position": "Co-ordinator",
+      "contact": "",
+      "image": ""
+    },
+    {
+      "name": "Divij Pirankar",
+      "position": ["Web-developer", "hackathon"],
+      "contact": "",
+      "image": ""
+    },
+    {
+      "name": "Sanket Mhammal",
+      "position": "Good guy",
+      "contact": "",
+      "image": "src/assets/images/core-team/Sanket_Mhammal.jpg"
+    },
+    {
+      "name": "Samson Surin",
+      "position": "Backend hunter",
+      "contact": "",
+      "image": "src/assets/images/core-team/Samson.jpg"
+    }
+  ]
+  

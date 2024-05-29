@@ -3,8 +3,28 @@
 @tailwind utilities;
 
 nav {
-  
     -webkit-clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
-    clip-path: polygon(0 0, 97% 0, 100% 54%, 100% 100%, 3% 100%, 0 69%);
+    clip-path: polygon(0 0, 97% 0, 100% 30%, 100% 100%, 3% 100%, 0 69%);
+   
 }
 
+nav a.active, a:hover{
+    text-shadow: #eae8e0 1px 0 10px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:black !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(252,252,255,1) 49%, rgba(0,0,0,1) 100%);
+    border-radius: 10px;
+    height: 10px;
+  }
+  
+
+  

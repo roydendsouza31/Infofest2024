@@ -12,6 +12,7 @@ const Schedule = React.lazy(() => import('./pages/Schedule'));
 const Rules = React.lazy(() => import('./pages/Rules'));
 const Ranking = lazy(() => import('./pages/Ranking'));
 const About = React.lazy(() => import('./pages/about'));
+const Team = React.lazy(()=>import('./pages/Teams'));
 
 const Fallback = () => (
   <div className='bg-teal-500 text-red-100'>Loading...</div>
@@ -68,6 +69,11 @@ function App() {
         <Route path='/about' element={
           <Suspense fallback={<Fallback />}>
             <About />
+          </Suspense>
+        } />
+        <Route path='/team' element={
+          <Suspense fallback={<Fallback />}>
+            <Team />
           </Suspense>
         } />
         <Route path='*' element={
