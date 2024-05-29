@@ -65,12 +65,19 @@ const Navbar = () => {
               Rules
             </NavLink>
             <NavLink
+              to="/team"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Team
+            </NavLink>
+            < NavLink
               to="/about"
               className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               About
-            </NavLink>
+            </ NavLink>
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleNavbar} className="text-gray-200 hover:text-white focus:outline-none">
@@ -122,6 +129,14 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Rules
+            </NavLink>
+            <NavLink
+
+              to="/team"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Team
             </NavLink>
             <NavLink
               to="/about"
