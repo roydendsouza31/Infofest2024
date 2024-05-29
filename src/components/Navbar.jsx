@@ -64,7 +64,7 @@ const Navbar = () => {
             >
               Rules
             </NavLink>
-            <Link
+            <NavLink
               to="/team"
               className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
@@ -130,21 +130,20 @@ const Navbar = () => {
             >
               Rules
             </NavLink>
-            <Link
+            <NavLink
               to="/team"
               className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               Our Team
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/about"
               className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               About us
             </NavLink>
-            </ NavLink>
           </div>
         </div>
       )}
