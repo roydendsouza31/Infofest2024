@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center m-auto md:m-0">
             {/* <img src={logo} alt="Logo" className="h-10 w-18" /> */}
-            <img src={logo2} alt="Logo" className="h-48 w-54" />
+            <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5]" />
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
             < NavLink
@@ -54,7 +54,7 @@ const Navbar = () => {
               Schedule
             </ NavLink>
             < NavLink
-              to="/schedule"
+              to="/Brochure"
               className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
@@ -69,7 +69,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/team"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300"
+              className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
               Our Team
