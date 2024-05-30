@@ -1,88 +1,117 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import events from '../events';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/moving-border';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent, useTransform } from 'framer-motion';
 import { fadeIn } from '../variants';
-// import bgevent from '../assets/event.png'
-// import { Util } from 'leaflet';
+import { getImageURL } from '../utils/image-util';
+import { useRef } from 'react';
+
 
 export default function FeaturedEventsGrid() {
-  return (
-    <motion.div
-     variants={fadeIn("up",0.1)}
-     initial = "hidden"
-     whileInView={"show"}
-     viewport={{once:false, ammount:0.7 }}
-     className='bg-cover bg-center py-5 text-white'>
-      <h2 className='text-2xl font-semibold px-10 py-5'>Event</h2>
-      <Grid>
-        {events.slice(0, 5).map((event, idx) => (
-          <Card key={idx} event={event} index={idx} />
-        ))}
-      </Grid>
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 0.6", "end end"]
+  });
 
-       <div className='flex justify-center'> 
-      <Button className="font-semibold bg-black" containerClassName="">
-        <Link to="/events">More Events</Link>
-      </Button>
-      </div>
+  const translateY = useTransform(scrollYProgress, [0, 1], [10, 450]);
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    // console.log("Page scroll: ", scrollYProgress)
+    console.log(latest)
+  })
+  return (
+    <motion.div ref={ref} variants={fadeIn("down", 0.1)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{ once: false, ammount: 0.7 }} >
+      <h2 className="font-bold text-2xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 my-5 mt-10">
+        Events
+      </h2>
+      <motion.div className='grid grid-cols-1 md:grid-cols-3 px-10  md:px-20 my-5'>
+        <div className='space-y-10 my-10 md:my-10'>
+          <motion.div
+            variants={fadeIn("left", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, ammount: 0.7 }}
+            className="card min-h-40 min-w-5 border-white border-2 rounded-2xl"></motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, ammount: 0.7 }}
+            className="card min-h-40 min-w-5 border-white border-2 rounded-2xl"></motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, ammount: 0.7 }}
+            className="card min-h-40 min-w-5 border-white border-2 rounded-2xl"></motion.div>
+
+
+        </div>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity:1  }}
+          transition={{ duration: 5 }} className='hidden md:block relative mx-auto'>
+          <motion.img src={getImageURL('rocket.svg')} style={{ translateY: translateY }} alt="rocket" />
+        </motion.div>
+        <div className='space-y-10 my-10 md:my-10'>
+          <motion.div
+            variants={fadeIn("right", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, ammount: 0.7 }}
+            className="card min-h-40 min-w-5 border-white border-2 rounded-2xl"></motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, ammount: 0.7 }}
+            className="card min-h-40 min-w-5 border-white border-2 rounded-2xl"></motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, ammount: 0.7 }}
+            className="card min-h-40 min-w-5 border-white border-2 rounded-2xl"></motion.div>
+        </div>
+      </motion.div>
+
+
+      <button className="bg-slate-800 mx-auto  no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white block">
+        <span className="absolute inset-0 overflow-hidden rounded-full">
+          <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+        </span>
+        <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+          <span className='py-3 text-sm'>
+            More Events
+          </span>
+          <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.75 8.75L14.25 12L10.75 15.25"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+            />
+          </svg>
+        </div>
+        <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+      </button>
     </motion.div>
   )
 }
 
-const Grid = styled.div`
-  grid-gap: 23px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(2,minmax(198px,auto));
-  margin: 0;
-  padding: .5rem 2rem;
-
-  & > a { position: relative }
-
-  & > a:first-child {
-    grid-column: 1;
-    grid-row: 1/span 2;
-
-    &::after {
-      content: '';
-      background-color: #000;
-      border-left: 1px solid #979797;
-      top: -11px;
-      height: 22px;
-      position: absolute;
-      left: -13px;
-      transform: rotate(-135deg);
-      width: 24px;
-    }
-  }
-
-  & > a:last-child::after {
-    content: '';
-    background-color: #000;
-    border-bottom: 1px solid #979797;
-    bottom: -11px;
-    height: 22px;
-    position: absolute;
-    right: -11px;
-    transform: rotate(135deg);
-    width: 24px;
-  }
-
-
-  @media screen and (max-width: 767px) {
-    grid-gap: 4px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 212px repeat(4,minmax(110px,auto));
-
-    & > a:first-child {
-      grid-column: 1;
-      grid-row: 1;
-    }
-  }
-`
 
 const Card = ({ event, index }) => {
   return (
