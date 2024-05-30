@@ -5,7 +5,6 @@ import dayjs from 'dayjs';
 import abdm from '../assets/images/sponsors/ABDM.webp';
 import betibacho from '../assets/images/sponsors/Beti_Bachao_Beti_Padhao.webp';
 import ntep from '../assets/images/sponsors/NTEP.webp';
-import logo from '../assets/images/infofestlogo.png';
 import goait from '../assets/images/sponsors/Goa_IT_Department.webp';
 import { Meteors } from './ui/meteors';
 import { Typewriter } from 'react-simple-typewriter';
