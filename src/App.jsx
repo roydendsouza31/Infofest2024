@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Winners from './pages/Winners';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import StarsCanvas from './components/ui/Star';
 
 const Event = React.lazy(() => import('./pages/Event'));
 const PageNotFound = React.lazy(() => import('./pages/404'));
@@ -83,6 +84,7 @@ function App() {
         } />
       </Routes>
       <Footer />
+      <StarsCanvas/>
     </>
   );
 }
