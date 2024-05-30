@@ -21,7 +21,7 @@ const Hero = () => {
   // Random component
   const Completionist = () => <span>You are good to go!</span>;
 
-  // Renderer callback with condition
+
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
@@ -63,19 +63,19 @@ const Hero = () => {
           animate={{ y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-col items-start mb-2">
+          <div className="flex flex-col items-start">
             <span className="italic text-xs md:text-sm">Powered By</span>
             <img id="it-dep-logo" src={goait} alt="Goa IT Department" className="h-16 w-auto" />
           </div>
           {/* <img src={logo} alt="logo" className=" w-80vw md:w-[65vw]" /> */}
-          <img src={logo2} alt="logo" className=" lg:w-[54vw] md:w-[65vw]" />
+          <img src={logo2} alt="logo" className="md:w-[60vw] scale-[1.5] md:scale-[1.7]" />
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="">
+          className="md:-mt-16 ">
           <span className="text-sm md:text-base font-semibold">In Association with</span>
           <div className="flex space-x-4 justify-center mt-2">
             <img width="35px" src={ntep} alt="National Tuberculosis Elimination Program" title="National Tuberculosis Elimination Program" />
