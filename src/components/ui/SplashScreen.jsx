@@ -8,6 +8,7 @@ import '../../earth.css'
 const StarField = () => {
   const groupRef = useRef()
   const starMeshRef = useRef()
+  const starSpeed = 5;
 
   useEffect(() => {
     const group = groupRef.current
@@ -33,9 +34,16 @@ const StarField = () => {
 
   useFrame(() => {
     if (starMeshRef.current) {
-      starMeshRef.current.rotation.y += 0.0005 // Rotate stars slowly around the y-axis
+      const positions = starMeshRef.current.geometry.attributes.position.array;
+      for (let i = 0; i < positions.length; i += 3) {
+        positions[i + 2] += starSpeed;
+        if (positions[i + 2] > 1000) {
+          positions[i + 2] = -1000;
+        }
+      }
+      starMeshRef.current.geometry.attributes.position.needsUpdate = true;
     }
-  })
+  });
 
   return <group ref={groupRef} />
 }
@@ -44,26 +52,27 @@ export default function SplashScreen({ setSplashDone }) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const timer1 = setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoaded(true);
     }, 6000);
-    
-    const timer2 = setTimeout(() => {
-      setSplashDone(true);
-    }, 19000);
 
     return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
+      clearTimeout(timer);
     };
-  }, [setSplashDone]);
+  }, []);
+
+  const handleReachTarget = () => {
+    setTimeout(() => {
+      setSplashDone(true);
+    }, 19000);
+  };
 
   return (
-    <Canvas camera={{ position: [15, -10, 10], fov: 15 }} style={{ background: 'black' }}>
-      <ambientLight />
+    <Canvas camera={{ position: [0, 50, 75], fov: 75 }} style={{ background: 'black' }}>
+      <ambientLight intensity={2}/>
       <pointLight position={[1, 1, 1]} />
       <Suspense fallback={null}>
-        <Space />
+        <Space onReachTarget={handleReachTarget}/>
       </Suspense>
       <StarField/>
       <OrbitControls />
