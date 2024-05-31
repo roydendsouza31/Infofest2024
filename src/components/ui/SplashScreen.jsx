@@ -9,6 +9,7 @@ const StarField = () => {
   const groupRef = useRef()
   const starMeshRef = useRef()
   const starSpeed = 5;
+  // const starSpeed = 0.5;
 
   useEffect(() => {
     const group = groupRef.current
@@ -68,7 +69,7 @@ export default function SplashScreen({ setSplashDone }) {
   };
 
   return (
-    <Canvas camera={{ position: [0, 50, 75], fov: 75 }} style={{ background: 'black' }}>
+    <Canvas camera={{ position: [-50, 200, -175], fov: 75 }} style={{ background: 'black' }}>
       <ambientLight intensity={2}/>
       <pointLight position={[1, 1, 1]} />
       <Suspense fallback={null}>

@@ -4,14 +4,17 @@ import { SpaceShip } from '../../../public/SpaceShip';
 
 function Space({ onReachTarget, ...props }) {
   const group = useRef();
-  const targetZ = -10; // The Z position at which we want to trigger the transition
-  const speed = 10;
+  const targetZ = 50; 
+  const speed = 30;
 
   useFrame((state, delta) => {
     if (group.current) {
       group.current.position.z += speed * delta;
       if (group.current.position.z >= targetZ && onReachTarget) {
         onReachTarget();
+      }
+      if (group.current.position.z > 1000) { 
+        group.current.position.z = -1000;
       }
     }
   });

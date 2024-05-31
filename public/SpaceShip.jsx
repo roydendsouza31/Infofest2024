@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 export function SpaceShip(props) {
   const { nodes, materials } = useGLTF('/SpaceShip.gltf')
   return (
-    <group {...props} dispose={null} scale={[15,15,15]}>
+    <group {...props} dispose={null} scale={[25,25,25]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.Blue_Buttons} />
         <mesh geometry={nodes.Object_3.geometry} material={materials['Blue_Buttons.001']} />
