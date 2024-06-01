@@ -34,6 +34,9 @@ export default function Ranking() {
   return (
     <motion.div className='my-20'>
       <Container>
+      <h2 className="font-bold text-2xl  md:text-5xl lg:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 my-5 mt-10">
+        Infofest 2023
+      </h2>
         <h1 className='heading cyber-glitch-2'> RANKING </h1>
 
         <table>
