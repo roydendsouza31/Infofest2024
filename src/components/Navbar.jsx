@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import logo from '../assets/images/infofestlogo.png';
 import { motion } from 'framer-motion';
 import logo2 from '../assets/images/ifwordmk2.svg';
 
