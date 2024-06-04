@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Winners from './pages/Winners';
@@ -14,6 +13,7 @@ const Rules = React.lazy(() => import('./pages/Rules'));
 const Ranking = lazy(() => import('./pages/Ranking'));
 const About = React.lazy(() => import('./pages/about'));
 const Team = React.lazy(()=>import('./pages/Teams'));
+const Loading = React.lazy(()=>import('./components/ui/loading'));
 
 const Fallback = () => (
   <div className='bg-teal-500 text-red-100'>Loading...</div>
@@ -41,44 +41,47 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={
+        <Suspense fallback={<Loading />}>
+            <Home />
+          </Suspense>} />
         <Route path='/event' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <Event />
           </Suspense>
         } />
         <Route path='/schedule' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <Schedule />
           </Suspense>
         } />
         <Route path='/rules' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <Rules />
           </Suspense>
         } />
         <Route path='/ranking' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <Ranking />
           </Suspense>
         } />
         <Route path='/winners' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <Winners />
           </Suspense>
         } />
         <Route path='/about' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <About />
           </Suspense>
         } />
         <Route path='/team' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <Team />
           </Suspense>
         } />
         <Route path='*' element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense fallback={<Loading />}>
             <PageNotFound />
           </Suspense>
         } />
