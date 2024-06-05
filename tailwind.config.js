@@ -13,6 +13,11 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        audiowide: ["Audiowide", "sans-serif"],
+        orbitron:["Orbitron","sans-serif"],
+        chakra:["Chakra Petch","sans-serif"],
+      },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
       },

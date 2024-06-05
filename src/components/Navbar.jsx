@@ -15,12 +15,12 @@ const Navbar = () => {
       initial={{ y: -50 }}
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
-      className="bg-[#000000c2] md:bg-[#000000ad] font-semibold text-md border-[#9797974d] border-[2px] left-2 right-2 fixed z-10 top-2">
+      className="bg-[#000000c2] md:bg-[#000000ad] text-md border-[#9797974d] border-[2px] left-2 right-2 fixed z-10 top-2 font-audiowide">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center m-auto md:m-0">
             {/* <img src={logo} alt="Logo" className="h-10 w-18" /> */}
-            <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5]" />
+            <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5] z-0" />
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
             < NavLink
