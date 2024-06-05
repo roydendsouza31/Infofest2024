@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center m-auto md:m-0">
             {/* <img src={logo} alt="Logo" className="h-10 w-18" /> */}
-            <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5] z-0" />
+            <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5] -z-10" />
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
             < NavLink
