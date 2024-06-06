@@ -1,4 +1,5 @@
 import React, { Suspense, useRef, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import  Space  from './Space';
@@ -49,18 +50,28 @@ const StarField = () => {
   return <group ref={groupRef} />
 }
 
-export default function SplashScreen({ setSplashDone }) {
-  const [loaded, setLoaded] = useState(false);
+export default function SplashScreen() {
+  const [show, setShow] = useState(true);
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 6000);
+    if (show)
+      document.body.style.overflow = "hidden";
+    
+    if (pathname !== '/') {
+      setShow(false);
+      document.body.style.overflow = "visible";
+    }
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+    setTimeout(() => {
+      setShow(false)
+      document.body.style.overflow = "visible";
+    },5000);
+  }, [])
+
+  if (pathname == '/' && !show) {
+    return null;
+  }
 
   const handleReachTarget = () => {
     setTimeout(() => {
@@ -69,14 +80,19 @@ export default function SplashScreen({ setSplashDone }) {
   };
 
   return (
-    <Canvas camera={{ position: [-50, 200, -175], fov: 75 }} style={{ background: 'black' }}>
-      <ambientLight intensity={2}/>
-      <pointLight position={[1, 1, 1]} />
-      <Suspense fallback={null}>
-        <Space onReachTarget={handleReachTarget}/>
-      </Suspense>
-      <StarField/>
-      <OrbitControls />
-    </Canvas>
+
+    <>
+      {(pathname == '/' && show) && (
+        <Canvas camera={{ position: [-50, 200, -175], fov: 75 }} style={{ background: 'black' ,inset:'0', zIndex:30 , position:'absolute'}} >
+          <ambientLight intensity={2} />
+          <pointLight position={[1, 1, 1]} />
+          <Suspense fallback={null}>
+            <Space onReachTarget={handleReachTarget} />
+          </Suspense>
+          <StarField />
+          <OrbitControls />
+        </Canvas>
+      )}
+    </>
   );
 }

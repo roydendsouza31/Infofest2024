@@ -5,6 +5,8 @@ import Winners from './pages/Winners';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import StarsCanvas from './components/ui/Star';
+import SplashScreen from './components/ui/SplashScreen';
+import Loading from './components/ui/loading'
 
 const Event = React.lazy(() => import('./pages/Event'));
 const PageNotFound = React.lazy(() => import('./pages/404'));
@@ -13,11 +15,9 @@ const Rules = React.lazy(() => import('./pages/Rules'));
 const Ranking = lazy(() => import('./pages/Ranking'));
 const About = React.lazy(() => import('./pages/about'));
 const Team = React.lazy(()=>import('./pages/Teams'));
-const Loading = React.lazy(()=>import('./components/ui/loading'));
 
-const Fallback = () => (
-  <div className='bg-teal-500 text-red-100'>Loading...</div>
-);
+
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -39,6 +39,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <SplashScreen />
       <ScrollToTop />
       <Routes>
         <Route path='/' element={
