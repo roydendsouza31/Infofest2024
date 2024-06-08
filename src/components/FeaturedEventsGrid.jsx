@@ -7,6 +7,8 @@ import { motion, useScroll, useMotionValueEvent, useTransform } from 'framer-mot
 import { fadeIn } from '../variants';
 import { getImageURL } from '../utils/image-util';
 import { useRef } from 'react';
+import Lottie from 'lottie-react';
+import rocket from '../assets/lottie/rocket.json'
 
 
 export default function FeaturedEventsGrid() {
@@ -16,8 +18,12 @@ export default function FeaturedEventsGrid() {
     offset: ["0 0.6", "end end"]
   });
 
+ 
   const translateY = useTransform(scrollYProgress, [0, 1], [10, 450]);
-
+  const style = {
+    height: 200,
+    transform: 'rotate(180deg)'
+  };
   return (
     <div className='relative bg-fixed bg-cover py-5 md:py-10' style={{backgroundImage:`url('https://img.freepik.com/free-photo/night-sky-with-planets-galaxies-scene-generative-ai_188544-7873.jpg?t=st=1717138646~exp=1717142246~hmac=a6d7ca4d177451d38e614e2194ce2c3573b7ee9cecc688c6a1baa033497fe2c5&w=826')`}}>
 
@@ -57,7 +63,10 @@ export default function FeaturedEventsGrid() {
           initial={{ opacity: 0 }}
           animate={{ opacity:1  }}
           transition={{ duration: 5 }} className='hidden md:block relative mx-auto'>
-          <motion.img src={getImageURL('rocket.svg')} style={{ translateY: translateY }} alt="rocket" />
+          {/* <motion.img src={getImageURL('rocket.svg')} style={{ translateY: translateY }} alt="rocket" /> */}
+          <motion.div  style={{ translateY: translateY}} >
+          <Lottie animationData={rocket} style={style} />;
+          </motion.div>
         </motion.div>
         <div className='space-y-10 my-10 md:my-10'>
           <motion.div
