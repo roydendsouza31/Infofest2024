@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "^9.105.6",
-    "@react-three/fiber": "^8.16.6",
+    "@react-three/drei": "^9.106.0",
+    "@react-three/fiber": "^8.16.8",
     "clsx": "^2.1.1",
     "dat.gui": "^0.7.9",
     "dayjs": "^1.11.11",
@@ -25,6 +25,7 @@
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.23.1",
     "react-simple-typewriter": "^5.0.1",
+    "react-three-fiber": "^6.0.13",
     "styled-components": "^6.1.11",
     "tailwind-merge": "^2.3.0",
     "three": "^0.164.1"
