@@ -3,7 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Text } from '@react-three/drei';
 import * as THREE from 'three';
-import '../../earth.css';
+import Orbitron from '../../assets/json/Orbitron-VariableFont_wght.ttf'
+
 
 const StarField = ({ starSpeed }) => {
   const groupRef = useRef();
@@ -12,7 +13,7 @@ const StarField = ({ starSpeed }) => {
   useEffect(() => {
     const group = groupRef.current;
     const stars = new THREE.BufferGeometry();
-    const starCount = 5000;
+    const starCount = 20000;
 
     const positions = [];
     for (let i = 0; i < starCount; i++) {
@@ -71,7 +72,8 @@ const AnimatedText = ({ transition }) => {
       <Text
         ref={textRef1}
         fontSize={40}
-        color={color}
+        // color={color}
+        font={Orbitron}
         position={position}
         rotation={rotation}
       >
@@ -80,7 +82,8 @@ const AnimatedText = ({ transition }) => {
       <Text
         ref={textRef2}
         fontSize={50}
-        color={color}
+        // color={color}
+        font={Orbitron}
         position={[0, -50, 0]}
         rotation={rotation}
       >

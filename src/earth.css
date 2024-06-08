@@ -1,11 +1,11 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-  
+<<<<<<< Updated upstream
+canvas{
+    height: 100vh !important;
+    width: 200vh !important;
+=======
 canvas {
     display: block;
+    height: 100vh !important;
 }
   
 .App {
@@ -21,23 +21,5 @@ canvas {
 100% {
     text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 60px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000, 0 0 200px #ff0000;
     }
+>>>>>>> Stashed changes
 }
-  
-.space-text {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 10vw;
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: glow 1.5s infinite alternate;
-}
-  
-.space-text-small {
-    font-size: 5vw;
-    top: 40%;
-}
-  
