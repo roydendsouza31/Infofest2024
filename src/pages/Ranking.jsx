@@ -84,12 +84,24 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 1rem;
+  
   h1 {
     font-size: clamp(1.2rem, 4vw, 2rem);
     font-weight: 700;
     color: #fff;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
+    text-shadow: 0 0 10px #ff00e6, 0 0 20px #ff00e6;
+    animation: neon-flicker 1.5s infinite alternate;
+  }
+
+  @keyframes neon-flicker {
+    0%, 100% {
+      text-shadow: 0 0 10px #ff00e6, 0 0 20px #ff00e6;
+    }
+    50% {
+      text-shadow: 0 0 5px #ff00e6, 0 0 10px #ff00e6;
+    }
   }
 
   table {
@@ -98,8 +110,10 @@ const Container = styled.div`
     max-width: 100%;
     overflow: auto;
     border-collapse: collapse;
-    background: #0d0d0d;
+    background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
     box-shadow: 0px 0px 20px #6b0e5a;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   thead tr th {
@@ -121,32 +135,52 @@ const Container = styled.div`
     border-top: 0.2rem solid #6b0e5a;
     background-color: #121212;
     color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  tr:hover {
+    background-color: #1a1a1a;
   }
 
   tr:nth-child(1) {
-    background-color: #ffbf00;
-    color: #000;
+    background-color: #ffc700;
+    color: white;
   }
 
   tr:nth-child(2) {
     background-color: #c0c0c0;
-    color: #000;
+    color: black;
   }
 
   tr:nth-child(3) {
     background-color: #cd7f32;
-    color: #000;
+    color: black;
   }
 
   @media screen and (max-width: 614px) {
     margin-top: 90px;
   }
 
+  .ranks {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+  }
+
+  .rank {
+    display: flex;
+    gap: 1rem;
+    background: #2b2a33;
+    padding: 1rem;
+    position: relative;
+  }
+
   .heading {
     font-family: 'Orbitron', sans-serif;
     font-weight: 500;
     color: #fff;
-    background-image: linear-gradient(to right, #000000, #6b0e5a, #000000);
+    background-image: linear-gradient(to right, #ffffff00, #ff00b133, #ffffff00);
     width: 100%;
     text-align: center;
     margin-block-start: 0;
