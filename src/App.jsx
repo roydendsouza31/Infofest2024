@@ -1,7 +1,6 @@
 import React, { Suspense, lazy, useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
-import Winners from './pages/Winners';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import StarsCanvas from './components/ui/Star';
@@ -15,6 +14,7 @@ const Rules = React.lazy(() => import('./pages/Rules'));
 const Ranking = lazy(() => import('./pages/Ranking'));
 const About = React.lazy(() => import('./pages/about'));
 const Team = React.lazy(()=>import('./pages/Teams'));
+const Winners = React.lazy(() => import('./pages/Winners'));
 
 
 
@@ -79,6 +79,11 @@ function App() {
         <Route path='/team' element={
           <Suspense fallback={<Loading />}>
             <Team />
+          </Suspense>
+        } />
+        <Route path='/winners' element={
+          <Suspense fallback={<Loading />}>
+            <Winners />
           </Suspense>
         } />
         <Route path='*' element={

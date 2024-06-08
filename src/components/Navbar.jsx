@@ -72,12 +72,13 @@ const Navbar = () => {
             >
               Our Team
             </NavLink>
+          
             < NavLink
-              to="/about"
+              to="/winners"
               className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
-              About
+              Winnres
             </ NavLink>
           </div>
           <div className="md:hidden flex items-center">
@@ -133,17 +134,24 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/team"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              className="text-white text-center px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               Our Team
             </NavLink>
             <NavLink
               to="/about"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              className="text-white text-center px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
               About us
+            </NavLink>
+            <NavLink
+              to="/winners"
+              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
+              onClick={() => setIsOpen(false)}
+            >
+              Winners
             </NavLink>
           </div>
         </div>
