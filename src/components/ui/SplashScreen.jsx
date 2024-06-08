@@ -5,7 +5,6 @@ import { OrbitControls, Text } from '@react-three/drei';
 import * as THREE from 'three';
 import Orbitron from '../../assets/json/Orbitron-VariableFont_wght.ttf'
 
-
 const StarField = ({ starSpeed }) => {
   const groupRef = useRef();
   const starMeshRef = useRef();
@@ -71,8 +70,7 @@ const AnimatedText = ({ transition }) => {
     <>
       <Text
         ref={textRef1}
-        fontSize={40}
-        // color={color}
+        fontSize={35}
         font={Orbitron}
         position={position}
         rotation={rotation}
@@ -81,8 +79,7 @@ const AnimatedText = ({ transition }) => {
       </Text>
       <Text
         ref={textRef2}
-        fontSize={50}
-        // color={color}
+        fontSize={45}
         font={Orbitron}
         position={[0, -50, 0]}
         rotation={rotation}
@@ -117,12 +114,12 @@ export default function SplashScreen() {
         clearInterval(zoomInInterval);
         setTransition(true);
       }
-    }, 50);
+    }, 175);
 
     const timer2 = setTimeout(() => {
       setShow(false);
       document.body.style.overflow = "visible";
-    }, 5000);
+    }, 10000);
 
     return () => {
       clearInterval(zoomInInterval);
@@ -143,21 +140,9 @@ export default function SplashScreen() {
           <Suspense fallback={null}>
             <AnimatedText transition={transition} />
           </Suspense>
-          <StarField starSpeed={transition ? 5 : 0.5} />
+          <StarField starSpeed={transition ? 10 : 1} />
           <OrbitControls />
         </Canvas>
-      )}
-      {transition && (
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          transition: 'opacity 0.5s ease-in-out',
-          opacity: transition ? 1 : 0,
-          zIndex: 40
-        }}></div>
       )}
     </>
   );
