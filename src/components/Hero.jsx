@@ -29,7 +29,7 @@ const Hero = () => {
       // Render a countdown
       return (
         <>
-          <h2 className='text-center my-2'>Remaing Time</h2>
+          <h2 className='text-center my-2 '>Remaing Time</h2>
           {/* <hr className='my-2'/> */}
           <div className='countdown text-sm md:text-2xl flex space-x-2 md:space-x-5'>
             <div className='text-center'><div>{days}</div>
@@ -51,7 +51,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative overflow-hidden font-audiowide min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
+    <div className="relative overflow-hidden font-audiowide min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white ">
       <img className="absolute inset-0 w-full h-full object-cover" src={bg} alt="background" />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
 
@@ -75,7 +75,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
           className="md:-mt-16 ">
-          <span className="text-sm md:text-base">In Association with</span>
+          <span className="text-sm md:text-base [text-shadow:_1px_1px_1px_rgb(0_0_0_/_40%)]">In Association with</span>
           <div className="flex space-x-4 justify-center mt-2">
             <img width="35px" src={ntep} alt="National Tuberculosis Elimination Program" title="National Tuberculosis Elimination Program" />
             <img width="35px" src={betibacho} alt="Beti Bachao Beti Padhao" title="Beti Bachao Beti Padhao" />
