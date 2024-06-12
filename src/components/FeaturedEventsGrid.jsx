@@ -25,7 +25,7 @@ export default function FeaturedEventsGrid() {
     transform: 'rotate(180deg)'
   };
   return (
-    <div className='relative bg-fixed bg-cover py-5 md:py-10' style={{backgroundImage:`url('https://img.freepik.com/free-photo/night-sky-with-planets-galaxies-scene-generative-ai_188544-7873.jpg?t=st=1717138646~exp=1717142246~hmac=a6d7ca4d177451d38e614e2194ce2c3573b7ee9cecc688c6a1baa033497fe2c5&w=826')`}}>
+    <div className='relative bg-fixed bg-cover py-5 md:py-10' style={{backgroundImage:`url(${getImageURL('eventbg.jpg')})`}}>
 
   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
     <motion.div ref={ref} variants={fadeIn("down", 0.1)}
