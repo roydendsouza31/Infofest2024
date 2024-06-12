@@ -29,8 +29,9 @@ const winners = [
 const Winners = () => {
   return (
     <>
+    {/* linear-gradient(to right, #ffffff00, #ff00b133, #ffffff00); */}
       <div className='my-24'>
-        <h1 className='text-white font-audiowide text-center text-3xl'>Winner</h1>
+        <h1 className='text-white font-audiowide text-center text-3xl bg-gradient-to-r from-[#ffffff00] via-[#ff00b133] p-2 to-[#ffffff00]'>Winner</h1>
         {winners.map((e) => {
           return (
             <>
