@@ -34,7 +34,7 @@ export default function Ranking() {
         {/* <h2 className="font-orbitron text-2xl md:text-5xl lg:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 my-5 mt-10">
           Infofest 2023
         </h2> */}
-        <h1 className='heading cyber-glitch-2'> RANKING </h1>
+        <h1 className='heading cyber-glitch-2 '> RANKING </h1>
         <table>
           <thead>
             <tr>
@@ -83,7 +83,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 1rem;
+  // margin: 0 1rem;
   
   h1 {
     font-size: clamp(1.2rem, 4vw, 2rem);
@@ -108,12 +108,12 @@ const Container = styled.div`
     margin-top: 20px;
     display: block;
     max-width: 100%;
-    overflow: auto;
+    // overflow: auto;
     border-collapse: collapse;
     background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
     box-shadow: 0px 0px 20px #6b0e5a;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: scroll;
   }
 
   thead tr th {
