@@ -46,9 +46,9 @@ const Event = () => {
         <ambientLight intensity={2}/>
         <OrbitControls enableZoom={false}/>
         <Suspense fallback={null}>
-          <Earth />
+          {/* <Earth /> */}
         </Suspense>
-        <Environment preset='sunset'/>
+        {/* <Environment preset='sunset'/> */}
         <StarField />
       </Canvas>
   )
