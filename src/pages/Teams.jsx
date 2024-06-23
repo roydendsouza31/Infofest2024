@@ -2,13 +2,8 @@ import React, { useEffect, useState } from 'react';
 import teamData from '../assets/json/coreteam.json';
 import bestoimage from '../assets/images/core-team/user.png'
 const Teams = () => {
-  const [teams, setTeams] = useState([]);
+  const [teams, setTeams] = useState(teamData);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setTeams(teamData);
-    }, 1000); 
-  }, []);
 
   return (
       <div className="mt-32 grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
