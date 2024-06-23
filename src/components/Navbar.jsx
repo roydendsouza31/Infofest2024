@@ -6,6 +6,17 @@ import logo2 from '../assets/images/ifwordmk2.svg';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const links = [
+    { label: 'Home', to: '/' },
+    { label: 'Events', to: '/event' },
+    { label: 'Schedule', to: '/schedule' },
+    { label: 'Rules', to: '/rules', },
+    { label: 'Brochure', to: '/Brochure', target: '_blank' },
+    { label: 'Rankings', to: '/ranking', },
+    { label: 'Winners', to: '/winners', },
+    { label: 'Our Team', to: '/team' }
+  ]
+
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
@@ -23,63 +34,13 @@ const Navbar = () => {
             <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5] -z-10" />
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
-            < NavLink
-              to="/"
+            {links.map(link => < NavLink
+              to={link.to}
               className="text-white text-center  px-3 py-2 rounded transition duration-300"
               onClick={() => setIsOpen(false)}
             >
-              Home
-            </ NavLink>
-            < NavLink
-              to="/event"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Event
-            </ NavLink>
-            < NavLink
-              to="/ranking"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Ranking
-            </ NavLink>
-            < NavLink
-              to="/schedule"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Schedule
-            </ NavLink>
-            < NavLink
-              to="/Brochure"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Brochure
-            </ NavLink>
-            < NavLink
-              to="/rules"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Rules
-            </NavLink>
-            <NavLink
-              to="/team"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Our Team
-            </NavLink>
-          
-            < NavLink
-              to="/winners"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300"
-              onClick={() => setIsOpen(false)}
-            >
-              Winners
-            </ NavLink>
+              {link.label}
+            </ NavLink>)}
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleNavbar} className="text-gray-200 hover:text-white focus:outline-none">
@@ -97,62 +58,13 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            < NavLink
-              to="/"
+            {links.map(link => < NavLink
+              to={link.to}
               className="text-white text-center px-3 py-2 rounded transition duration-300 block"
               onClick={() => setIsOpen(false)}
             >
-              Home
-            </ NavLink>
-            < NavLink
-              to="/event"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
-              onClick={() => setIsOpen(false)}
-            >
-              Event
-            </ NavLink>
-            < NavLink
-              to="/ranking"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
-              onClick={() => setIsOpen(false)}
-            >
-              Ranking
-            </ NavLink>
-            < NavLink
-              to="/schedule"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
-              onClick={() => setIsOpen(false)}
-            >
-              Schedule
-            </ NavLink>
-            < NavLink
-              to="/rules"
-              className="text-white text-center  px-3 py-2 rounded transition duration-300 block"
-              onClick={() => setIsOpen(false)}
-            >
-              Rules
-            </NavLink>
-            <NavLink
-              to="/team"
-              className="text-white text-center px-3 py-2 rounded transition duration-300 block"
-              onClick={() => setIsOpen(false)}
-            >
-              Our Team
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="text-white text-center px-3 py-2 rounded transition duration-300 block"
-              onClick={() => setIsOpen(false)}
-            >
-              About us
-            </NavLink>
-            <NavLink
-              to="/winners"
-              className="text-white text-center hover:bg-blue-700 px-3 py-2 rounded transition duration-300 block"
-              onClick={() => setIsOpen(false)}
-            >
-              Winners
-            </NavLink>
+              {link.label}
+            </ NavLink>)}
           </div>
         </div>
       )}
