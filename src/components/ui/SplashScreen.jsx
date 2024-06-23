@@ -1,9 +1,10 @@
 import React, { Suspense, useRef, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Text } from '@react-three/drei';
+import { OrbitControls, Text,Center } from '@react-three/drei';
 import * as THREE from 'three';
 import Orbitron from '../../assets/json/Orbitron-VariableFont_wght.ttf'
+import { useMediaQuery } from 'react-responsive'
 
 const StarField = ({ starSpeed }) => {
   const groupRef = useRef();
@@ -53,6 +54,7 @@ const AnimatedText = ({ transition }) => {
   const [rotation, setRotation] = useState([0, 0, 0]);
   const [position, setPosition] = useState([0, 0, -50]);
   const [color, setColor] = useState("#2596be")
+  const isMobile = useMediaQuery({ query: '(max-width: 640px)' })
 
   useEffect(() => {
     if (transition) {
@@ -68,18 +70,20 @@ const AnimatedText = ({ transition }) => {
 
   return (
     <>
-      <Text
+
+    <Text
         ref={textRef1}
-        fontSize={35}
+        fontSize={isMobile?7: 35}
         font={Orbitron}
-        position={position}
+        // position={position}
         rotation={rotation}
       >
         GET READY FOR THE BIGGEST EVENT
       </Text>
+      
       <Text
         ref={textRef2}
-        fontSize={45}
+        fontSize={isMobile?20:45}
         font={Orbitron}
         position={[0, -50, 0]}
         rotation={rotation}
@@ -141,7 +145,7 @@ export default function SplashScreen() {
             <AnimatedText transition={transition} />
           </Suspense>
           <StarField starSpeed={transition ? 10 : 1} />
-          <OrbitControls />
+          <OrbitControls enableZoom={false}/>
         </Canvas>
       )}
     </>
