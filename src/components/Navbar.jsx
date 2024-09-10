@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const links = [
     { label: 'Home', to: '/' },
-    { label: 'Events', to: '/event' },
+    { label: 'Events', to: '/events' },
     { label: 'Schedule', to: '/schedule' },
     { label: 'Rules', to: '/rules', },
     { label: 'Brochure', to: '/Brochure', target: '_blank' },

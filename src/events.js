@@ -19,8 +19,8 @@ const events = [
     Refreshments will be provided throughout the event.
     The teams are free to take breaks in between.
     Teams are not allowed to leave the venue until the end of the hackathon.`,
-    date: "2024-09-10",
-    end_date: "2024-09-11",
+    date: "2024-12-10",
+    end_date: "2024-12-11",
     time: {
       from: "10:00 AM",
       to: "10:00 AM"
@@ -55,7 +55,7 @@ const events = [
     description: "Solve puzzles and find hidden clues to discover the flag. Clues can be hidden anywhere. Each flag will earn you points. So sharpen your minds and get ready to do some digging.",
     image: "/CTF.webp",
     rules: 'PREREQUISITES: Laptop/PC with a good internet connection, Python (may use online python compilers) Linux terminal. \nMembers per team: 1-3. \nCTF will be hosted online making it possible to participate from any location. \nTeam members must give their real names, usernames going to be used for competition, personal email id, and phone numbers in the registration form to verify their identities and to collect prizes. \nParticipants/Teams are not allowed to carry out any attacks on the CTF infrastructure or on other teams/individuals. \nNo DoS/DDoS/BruteForcing/Automated Scans or any other practice generating any large amount of traffic by any other means on any challenges and the contest infrastructure. It is not permitted and is never intended in any challenge. \nAny kind of malpractices against any challenge or against the platform will result in the disqualification of the team. \nSharing the flags/solutions/writeups with anyone outside of your team when the competition is live is strictly prohibited. \nCTF organizers retain the right to amend any existing rules or introduce new rules at any time before/during/after the contest. Any such rules must be followed by all the members of each team. \nIf you find any flaws in the CTF infrastructure, you have to report that to the organizing team immediately instead of exploiting it or sharing/disclosing it with others through any means. \nBy participating in this contest, you agree that you have read the above rules and fully agree to adhere to them. \nWe may add/remove/modify the challenges during the contest. \nAny further updates will also be shared through our official channels. \nThe decision of the organizing team will be final. \nIf anyone is found to break the above mentioned rules, the whole team will be disqualified and removed from the event. We may also disclose your team name, members, and IP if such malpractices happen.',
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "11:00 AM",
       to: "09:00 PM"
@@ -90,7 +90,7 @@ const events = [
     Each level of the competition will require the participant to complete a coding challenge using a different programming language. Offline documentation will be provided for each language.
     Every level will have elimination as well as a higher degree of difficulty.
     Participants are not allowed to communicate with anyone outside the team or use any other resource(internet/phones) during the competition. Any violation of this rule will result in disqualification`,
-    date: "2024-09-11",
+    date: "2024-12-11",
     time: {
       from: "10:00 AM",
       to: "03:00 PM"
@@ -130,7 +130,7 @@ const events = [
     * ‎
     * ‎
     Readymade robots are not allowed. \nBots must be fully autonomous and must be started once with only 1 onboard switch. \nParticipants are expected to carry spare batteries, spare parts, repair kits etc. \nIncase of any issues with the robot during the race participants will be disqualified, however before the race they may fix any issues. \nInterfering with other participant's robots on and off the track, Damaging/Modifying the Arena as a participant or by a participant's robot or any action done towards harming the competition or other participants will be met with disqualification`,
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "03:00 PM"
@@ -164,7 +164,7 @@ const events = [
     description: "Assemble your team and show your skills, teamwork, and strategies to beat the opponents.",
     image: "/BGMI.webp",
     rules: 'Members per Team : 4 \nCross college teams are allowed \nEach participant must have a valid BGMI account \nMaps : Erangel, Miramar, Sanhok, Livik \nAll participant are strictly required to be present at the venue',
-    date: "2024-09-11",
+    date: "2024-12-11",
     time: {
       from: "10:00 AM",
       to: "03:00 PM"
@@ -199,7 +199,7 @@ const events = [
     description: "Missing Peripherals is a technical competition designed to test participants' skills in working with computers and technology under challenging conditions. Participants must complete technical tasks within a set time limit using only the available peripherals and showcase technical proficiency under pressure.",
     image: "/missing peripherals.webp",
     rules: 'Members per team: 1-2 \nRounds: The contest will be divided into Three rounds and in each round one of the peripheral (Monitor/ ?/ ?) will be missing and participants will have to perform the given task. \nRound 1: Mind sight \nIn this round, The participant will have to code a problem with their monitor turned off. Points will be awarded based on the amount of completion of code within the time limit and the least number of errors. \nRound 2: Surprise \nRound 3: Surprise',
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "01:00 PM"
@@ -233,7 +233,7 @@ const events = [
     description: " It is an opportunity for designers to demonstrate their ability to create functional, visually appealing, and user-friendly designs that meet the specific requirements of the competition.",
     image: "/UI UX.webp",
     rules: 'Members per team: 1 \nParticipants are expected to bring their own devices but for some exceptions devices will be provided. \nFigma must be installed. \nParticipants should only use figma to design, No other platform will be allowed. \nNo copying of design or related stuff from the internet. Any malpractice detected will result in direct disqualification.',
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "03:00 PM"
@@ -271,7 +271,7 @@ const events = [
     Reel should cover glimpses of every event
     Team should shoot the events on the day 1 and submit it on the next day before 12pm
     Reel should contain 10-20sec of sponsor advertisement`,
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "09:30 AM",
       to: "05:30 PM"
@@ -311,7 +311,7 @@ const events = [
     5 mins half
     Game speed will be normal
     Club and Country Teams only`,
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "04:30 PM"
@@ -348,7 +348,7 @@ const events = [
     description: "Do you think you are the smartest one in the room? test your knowledge in field of general knowledge.",
     image: "/quiz.webp",
     rules: 'Rounds : Qualifier, Elimination, FINAL \nMembers per team: 2 \nUse of mobile phones or any electronic device is prohibited. \nEach round would be explained during the quiz. \nThe quiz masters decision would be final and binding. \nTHEME : GENERAL KNOWLEDGE',
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "03:00 PM"
@@ -382,7 +382,7 @@ const events = [
     description: "Get ready for an intense clash of ideas centred around the raging topics in the tech world. With strict time limits and rules in place, each team will present their arguments and counterarguments in a thought-provoking and engaging format.",
     image: "/tech debate.webp",
     rules: 'Members per team: 2 \nAll participants must engage in the debate with respect and professionalism towards their opponent. \nParticipants must strictly adhere to the time limits for each round. \nInterruptions or speaking out of turn are strictly prohibited during the debate.',
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "03:00 PM"
@@ -419,7 +419,7 @@ const events = [
     The pitch must be original.
     Participants can submit a ppt/pdf and/or video file of their pitch presentation.
     The participants should adhere to a time limit of 10mins(8 mins presentation + 2 mins questions) and should not exceed the time limit.`,
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "03:00 PM"
@@ -453,7 +453,7 @@ const events = [
     description: "Come and hear what's brewing in the world of tech from the people at the forefront of the storm.",
     image: "/ift1.jpeg",
     resourcePerson: "Dr. Manish Gaunekar, Dr. Shweta Kanekar, Dr. Uma Sadekar",
-    date: "2024-09-10",
+    date: "2024-12-10",
     time: {
       from: "10:00 AM",
       to: "11:00 AM"
@@ -490,7 +490,7 @@ const events = [
     description: "Come and hear what's brewing in the world of tech from the people at the forefront of the storm.",
     image: "/ift2.jpeg",
     resourcePerson: "Dr. Damodar Reddy",
-    date: "2024-09-11",
+    date: "2024-12-11",
     time: {
       from: "10:00 AM",
       to: "11:00 AM"
@@ -526,7 +526,7 @@ const events = [
     codeName: "workshop",
     description: "Unleash your inner tech guru in our immersive workshop, where innovation meets expertise and cutting-edge technologies pave the way to a limitless future.",
     image: "/workshop.webp",
-    date: "2024-09-11",
+    date: "2024-12-11",
     resourcePerson: "Anay Kamat (Lead Software Consultant - Equal Experts)",
     time: {
       from: "10:00 AM",

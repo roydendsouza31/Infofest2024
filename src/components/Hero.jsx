@@ -96,7 +96,7 @@ const Hero = () => {
             deleteSpeed={50}
             delaySpeed={1000}        
           />}</span> */}
-          <Countdown date={new Date('2024-08-10')} renderer={renderer}></Countdown>
+          <Countdown date={new Date('2024-12-10')} renderer={renderer}></Countdown>
         </motion.div>
         <motion.div
           id="logo-lg"

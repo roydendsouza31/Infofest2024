@@ -12,8 +12,8 @@ import { useMediaQuery } from 'react-responsive'
 import { useNavigate } from 'react-router'
 // import MetaTags from '../components/MetaTags';
 
-const startDate = '2024-09-10'
-const endDate = '2024-09-11'
+const startDate = '2024-12-10'
+const endDate = '2024-12-11'
 const todayStr = new Date().toISOString().replace(/T.*$/, '') // YYYY-MM-DD of today
 console.log(todayStr) 
 const initalDate = new Date((todayStr >= startDate && todayStr <= endDate) ? todayStr : startDate)
@@ -53,39 +53,39 @@ const EVENTS = [
   {
     title: 'Registrations/Reporting',
     resourceId: 'GU Chemical Science Auditorium (Block E)',
-    start: '2023-08-10T09:00:00',
-    end: '2023-08-10T09:30:00',
+    start: '2024-12-10T09:00:00',
+    end: '2024-12-10T09:30:00',
   },
   {
     title: 'INAUGRAL',
     resourceId: 'GU Chemical Science Auditorium (Block E)',
-    start: '2023-08-10T09:30:00',
-    end: '2023-08-10T10:00:00',
+    start: '2024-12-10T09:30:00',
+    end: '2024-12-10T10:00:00',
   },
   {
     title: 'Registrations/Reporting',
     resourceId: 'Goa Business School',
-    start: '2023-08-11T09:00:00',
-    end: '2023-08-11T10:00:00',
+    start: '2024-12-11T09:00:00',
+    end: '2024-12-11T10:00:00',
   },
   {
     title: 'VID CRED Submission',
     resourceId: 'Online',
-    start: '2023-08-11T09:00:00',
-    end: '2023-08-11T12:00:00',
+    start: '2024-12-11T09:00:00',
+    end: '2024-12-11T12:00:00',
   },
   {
     id: 'Hackathon',
     title: 'Hackathon (Presentation & Judging)',
     resourceId: 'Computer Science & Technology (Office Block Class)',
-    start: '2023-08-11T10:00:00',
-    end: '2023-08-11T13:00:00',
+    start: '2024-12-11T10:00:00',
+    end: '2024-12-11T13:00:00',
   },
   {
     title: 'Closing & Prize Distribution',
     resourceId: 'GU Chemical Science Auditorium (Block E)',
-    start: '2023-08-11T16:00:00',
-    end: '2023-08-11T18:30:00',
+    start: '2024-12-11T16:00:00',
+    end: '2024-12-11T18:30:00',
   }
 ]
 

@@ -7,7 +7,7 @@ import StarsCanvas from './components/ui/Star';
 import SplashScreen from './components/ui/SplashScreen';
 import Loading from './components/ui/loading'
 
-const Event = React.lazy(() => import('./pages/Event'));
+const Events = React.lazy(() => import('./pages/Events'));
 const PageNotFound = React.lazy(() => import('./pages/404'));
 const Schedule = React.lazy(() => import('./pages/Schedule'));
 const Rules = React.lazy(() => import('./pages/Rules'));
@@ -46,9 +46,14 @@ function App() {
         <Suspense fallback={<Loading />}>
             <Home />
           </Suspense>} />
-        <Route path='/event' element={
+        <Route path='/events' element={
           <Suspense fallback={<Loading />}>
-            <Event />
+            <Events />
+          </Suspense>
+        } />
+        <Route path='/events/:slug' element={
+          <Suspense fallback={<Loading />}>
+            <Events />
           </Suspense>
         } />
         <Route path='/schedule' element={
