@@ -8,7 +8,7 @@ const ImageSlidshow = () => {
   const images = Array.from({ length: 17 }, (_, i) => (getImageURL(`past/h${i + 1}.webp`)));
   return (
     <>
-      <h2 className="font-audiowide font-semibold text-2xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 my-5 mt-10">
+      <h2 className="font-audiowide font-semibold text-2xl md:text-4xl text-center bg-clip-text py-12">
         A Glimpse Into The Past
       </h2>
       <ImagesSlider id='imageSlider' className="h-[30vh] md:h-[35rem] w-[80vw] mx-auto " images={images}>
