@@ -6,18 +6,18 @@ const events = [
     codeName: "Hackathon",
     description: "This hackathon aims to foster innovative solutions for a resilient future. Participants will work in teams to develop open-source projects that address sustainability challenges.",
     image: "/Hackthon.webp",
-    rules: `Teams of 2-3 members (cross-college teams allowed).
-\n Only one entry per team is allowed.
-\n Participants must bring their own laptops/hardware.
-\n Participants cannot be on more than one team.
-\n No development can start before the event's official start time.
-\n All intellectual property developed during the hackathon must be open-source and submitted via GitHub.
-\n All code must be created at the hackathon, with the exception of publicly developed and openly  licensed APIs and SDKs.
-\n An online screening round may be conducted depending on the number of entries.
-\n Problem statements will be released at the venue.
-\n Teams cannot leave the venue until the end of the hackathon.
-\n Wi-Fi access and power points will be available.
-\n The concerned authority is not responsible for any belongings lost or stolen.
+    rules: `*Teams of 2-3 members (cross-college teams allowed).
+* Only one entry per team is allowed.
+* Participants must bring their own laptops/hardware.
+* Participants cannot be on more than one team.
+* No development can start before the event's official start time.
+* All intellectual property developed during the hackathon must be open-source and submitted via GitHub.
+* All code must be created at the hackathon, with the exception of publicly developed and openly  licensed APIs and SDKs.
+* An online screening round may be conducted depending on the number of entries.
+* Problem statements will be released at the venue.
+* Teams cannot leave the venue until the end of the hackathon.
+* Wi-Fi access and power points will be available.
+* The concerned authority is not responsible for any belongings lost or stolen.
 `,
     date: "2024-12-10",
     end_date: "2024-12-11",
@@ -45,7 +45,10 @@ const events = [
         image: "/prajwath_gowda.webp"
       }
     ],
-    judgingCriteria: 'The judging process will be conducted in three rounds: \nThe first round will evaluate the ideation. \nThe second round will assess the progress made. \nThe final round will involve the presentation of the solution.',
+    judgingCriteria: `* The judging process will be conducted in three rounds: 
+    * The first round will evaluate the ideation. 
+    * The second round will assess the progress made. 
+    * The final round will involve the presentation of the solution.`,
     prize: "Rs 30000/-",
     entryFee: 'FREE',
     category: "Offline",
@@ -60,20 +63,20 @@ const events = [
     image: "/CTF.webp",
     rules: `Participants must have a basic understanding of programming and cybersecurity
 concepts. Open to first time CTF players as well.
-\nPoints are awarded based on the difficulty of the challenges solved and the
+* Points are awarded based on the difficulty of the challenges solved and the
 number of flags captured. The team with the most solves and highest points
 wins. Decision of coordinators will be considered final.
-\n Teams must submit their solutions within the given time frame. Late submissions
+* Teams must submit their solutions within the given time frame. Late submissions
 will not be considered.
-\n Teams can ask for hints with each hint leading to a specified deduction of points
+* Teams can ask for hints with each hint leading to a specified deduction of points
 from the team’s total score.
-\n Collaboration with other teams is strictly prohibited. Any form of
+* Collaboration with other teams is strictly prohibited. Any form of
 communication between teams regarding the challenges will result in
 disqualification.
-\n Teams are expected to compete ethically. Any form of cheating, such as using
+* Teams are expected to compete ethically. Any form of cheating, such as using
 unauthorized tools or scripts or performing DOS or DDOS, will result in
 immediate disqualification.
-\n In case of technical difficulties, teams must report immediately to the event
+* In case of technical difficulties, teams must report immediately to the event
 coordinator. The coordinator's decision on any disputes or issues will be final.`,
     date: "2024-12-10",
     time: {
@@ -315,16 +318,16 @@ coordinator. The coordinator's decision on any disputes or issues will be final.
     description: "Think beyond the code!!While computer science is important, this quiz will challenge you across a broad spectrum of topics.Show off your wide-ranging knowledge and test your overall versatility, compete with peers from various disciplines, and prove that you're more than just a tech whiz. Come prepared for a well-rounded intellectual challenge!",
     image: "/Quiz.webp", // Replace with actual image path
     rules: `Participants must be current students of the participating colleges.
-\n Each college can send a maximum of two teams and each team should consist of a maximum 2 members .
-\n The quiz will consist of two elimination rounds
-\n In the event of a tie, tie-breaker questions will be used to determine the winner.
-\n Correct answers will be awarded points. The point value for each question will be announced before the round begins.
-\n The quiz will consist of multiple rounds.
-\n Participants must adhere to the quizmaster’s instructions at all times.
-\n Use of mobile phones, smart devices, or any other means of cheating is strictly prohibited.
-\n Any form of misconduct may lead to disqualification of the team.
-\n The quizmaster’s decision is final and binding in all matters related to the quiz.
-\n Any team found to be using unfair means will be disqualified.
+* Each college can send a maximum of two teams and each team should consist of a maximum 2 members .
+* The quiz will consist of two elimination rounds
+* In the event of a tie, tie-breaker questions will be used to determine the winner.
+* Correct answers will be awarded points. The point value for each question will be announced before the round begins.
+* The quiz will consist of multiple rounds.
+* Participants must adhere to the quizmaster’s instructions at all times.
+* Use of mobile phones, smart devices, or any other means of cheating is strictly prohibited.
+* Any form of misconduct may lead to disqualification of the team.
+* The quizmaster’s decision is final and binding in all matters related to the quiz.
+* Any team found to be using unfair means will be disqualified.
 The Judging criteria will be explained prior to each round as it will differ based on the rounds .
 `,
     date: "2024-12-10", // Assuming a different date for this event
@@ -357,18 +360,18 @@ The Judging criteria will be explained prior to each round as it will differ bas
     description: "Debate is an exciting platform for students to showcase their knowledge, critical thinking, and public speaking skills. There will be stimulating conversations among participants about current technological problems, innovations, and trends. This event seeks to promote varied perspectives on tech-related issues, improve communication skills, and cultivate an intellectually curious spirit.",
     image: "/Debate.webp", // Replace with actual image path
     rules: `Each team will consist of two members.
-\n Topics will be tech-related and provided to the teams just before their turn.
-\n Each debate will follow this structure:
-\n- Opening Statement (For the motion): 3 minutes
-\n- Opening Statement (Against the motion): 3 minutes
-\n- Rebuttal (For the motion): 2 minutes
-\n- Rebuttal (Against the motion): 2 minutes
-\n- Closing Statements (Both sides): 1 minutes each
-\n A brief Q&A session may follow each debate, where judges  can ask questions.
-\n Participants must maintain decorum and respect at all times.
-\n Personal attacks, offensive language, or disrespectful behavior will result in disqualification.
-\n Judges decision will be final
-\n Electronic devices are not allowed during the debate.
+* Topics will be tech-related and provided to the teams just before their turn.
+* Each debate will follow this structure:
+*- Opening Statement (For the motion): 3 minutes
+*- Opening Statement (Against the motion): 3 minutes
+*- Rebuttal (For the motion): 2 minutes
+*- Rebuttal (Against the motion): 2 minutes
+*- Closing Statements (Both sides): 1 minutes each
+* A brief Q&A session may follow each debate, where judges  can ask questions.
+* Participants must maintain decorum and respect at all times.
+* Personal attacks, offensive language, or disrespectful behavior will result in disqualification.
+* Judges decision will be final
+* Electronic devices are not allowed during the debate.
 `,
     date: "2024-12-11", // Assuming a different date for this event
     time: {
