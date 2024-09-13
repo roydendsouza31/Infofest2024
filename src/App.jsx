@@ -8,6 +8,7 @@ import SplashScreen from './components/ui/SplashScreen';
 import Loading from './components/ui/loading'
 
 const Events = React.lazy(() => import('./pages/Events'));
+const Event = React.lazy(() => import('./pages/Event'));
 const PageNotFound = React.lazy(() => import('./pages/404'));
 const Schedule = React.lazy(() => import('./pages/Schedule'));
 const Rules = React.lazy(() => import('./pages/Rules'));
@@ -53,7 +54,7 @@ function App() {
         } />
         <Route path='/events/:slug' element={
           <Suspense fallback={<Loading />}>
-            <Events />
+            <Event />
           </Suspense>
         } />
         <Route path='/schedule' element={
