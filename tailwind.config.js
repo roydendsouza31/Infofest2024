@@ -20,6 +20,7 @@ export default {
       },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
+          'pulsing-effect': 'bounce 2s linear infinite',
       },
       keyframes: {
         meteor: {
