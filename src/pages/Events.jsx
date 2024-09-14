@@ -50,7 +50,7 @@ const Events = () => {
         <img src={line} className="absolute" alt="Line decoration" />
 
         <div className="flex space-x-10 my-5">
-          {["ALL", "OFFLINE", "ONLINE", "GAMING"].map((category, index) => (
+          {["ALL", "Offline", "Online", "GAMING"].map((category, index) => (
             <button
               key={index}
               className={`font-orbitron font-bold text-lg cursor-pointer focus:outline-none px-4 py-2 transition-colors duration-800 ${

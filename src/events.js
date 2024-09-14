@@ -242,7 +242,7 @@ coordinator. The coordinator's decision on any disputes or issues will be final.
   {
     slug: "SciFiReelChallenge",
     title: "Sci-Fi Reel Challenge",
-    codeName: "SciFiReelChallenge",
+    codeName: "Sci-Fi Reel Challenge",
     description: "Showcase your creativity and craft a science fiction story in just 90 seconds. Tell a compelling story that captures the essence of sci-fi. Use VFX to enhance your reel.",
     image: "/SciFiReelChallenge.webp", // Replace with actual image path
     rules: `
@@ -358,7 +358,7 @@ The Judging criteria will be explained prior to each round as it will differ bas
     title: "Debate",
     codeName: "Debate",
     description: "Debate is an exciting platform for students to showcase their knowledge, critical thinking, and public speaking skills. There will be stimulating conversations among participants about current technological problems, innovations, and trends. This event seeks to promote varied perspectives on tech-related issues, improve communication skills, and cultivate an intellectually curious spirit.",
-    image: "/Debate.webp", // Replace with actual image path
+    image: "/techdebate.webp", // Replace with actual image path
     rules: `Each team will consist of two members.
 * Topics will be tech-related and provided to the teams just before their turn.
 * Each debate will follow this structure:
