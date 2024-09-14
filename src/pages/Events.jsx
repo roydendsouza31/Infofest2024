@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
+import { Link, useParams } from "react-router-dom";
+import events from "../events";
 import line from "../assets/images/vector.svg";
+import { getImageURL } from "../utils/image-util";
 import hackathon from "../assets/images/events/Hackthon.webp";
 import blackbox from "../assets/images/events/blackbox coding.webp";
 import businessPitch from "../assets/images/events/businessPitch.webp";
@@ -13,26 +16,29 @@ import CTF from "../assets/images/events/CTF.webp";
 import Coding from "../assets/images/events/LevelUpCoding.webp";
 
 const Events = () => {
+  const { slug } = useParams();
   const [selectedCategory, setSelectedCategory] = useState("ALL");
 
-  const eventImages = [
-    { src: hackathon, category: "OFFLINE", title: "Hackathon" },
-    { src: businessPitch, category: "OFFLINE", title: "Business Pitch" },
-    { src: LineFollower, category: "OFFLINE", title: "Line Follower" },
-    { src: blackbox, category: "ONLINE", title: "Blackbox Coding" },
-    { src: UI, category: "ONLINE", title: "UI/UX Design" },
-    { src: BGMI, category: "GAMING", title: "BGMI Tournament" },
-    { src: fifa, category: "GAMING", title: "FIFA 22" },
-    { src: counterstrike, category: "GAMING", title: "Counterstrike" },
-    { src: debate, category: "OFFLINE", title: "tech debate" },
-    { src: CTF, category: "ONLINE", title: "Capture the flag" },
-    { src: Coding, category: "ONLINE", title: "Level up coding" },
-  ];
+  // // Event images array
+  // const eventImages = [
+  //   { src: hackathon, category: "OFFLINE", title: "Hackathon", slug: "hackathon" },
+  //   { src: businessPitch, category: "OFFLINE", title: "Business Pitch", slug: "business-pitch" },
+  //   { src: LineFollower, category: "OFFLINE", title: "Line Follower", slug: "LineFollower" },
+  //   { src: blackbox, category: "ONLINE", title: "Blackbox Coding", slug: "blackbox-coding" },
+  //   { src: UI, category: "ONLINE", title: "UI/UX Design", slug: "ui-ux-design" },
+  //   { src: BGMI, category: "GAMING", title: "BGMI Tournament", slug: "bgmi-tournament" },
+  //   { src: fifa, category: "GAMING", title: "FIFA 22", slug: "fifa-22" },
+  //   { src: counterstrike, category: "GAMING", title: "Counterstrike", slug: "counterstrike" },
+  //   { src: debate, category: "OFFLINE", title: "Tech Debate", slug: "tech-debate" },
+  //   { src: CTF, category: "ONLINE", title: "Capture the Flag", slug: "capture-the-flag" },
+  //   { src: Coding, category: "ONLINE", title: "Level Up Coding", slug: "level-up-coding" },
+  // ];
 
+  // Filtered images based on selected category
   const filteredImages =
     selectedCategory === "ALL"
-      ? eventImages
-      : eventImages.filter((image) => image.category === selectedCategory);
+      ? events
+      : events.filter((image) => image.category === selectedCategory);
 
   return (
     <>
@@ -47,10 +53,10 @@ const Events = () => {
           {["ALL", "OFFLINE", "ONLINE", "GAMING"].map((category, index) => (
             <button
               key={index}
-              className={`font-orbitron font-bold text-white text-lg cursor-pointer focus:outline-none px-4 py-2 transition-colors duration-800 ${
+              className={`font-orbitron font-bold text-lg cursor-pointer focus:outline-none px-4 py-2 transition-colors duration-800 ${
                 selectedCategory === category
-                  ? "text-blue-500 border-b-2 border-blue-500"
-                  : "hover:text-gray-300"
+                  ? "text-green-500 border-b-2 border-green-500"
+                  : "hover:text-gray-500 text-white"
               }`}
               onClick={() => setSelectedCategory(category)}
             >
@@ -59,20 +65,23 @@ const Events = () => {
           ))}
         </div>
 
+        {/* Event Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
-          {filteredImages.map((image, index) => (
-            <div key={index} className="relative group hover:animate-pulsing-effect">
-              <img
-                src={image.src}
-                alt={image.title}
-                className="rounded-md shadow-lg h-48 object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-bold">
-                  {image.title}
-                </span>
+          {filteredImages.map((img, index) => (
+            <Link key={index} to={`/events/${img.slug}`}>
+              <div className="relative group hover:animate-pulsing-effect">
+                <img
+                  src={getImageURL(`events${img.image}`)}
+                  alt={img.title}
+                  className="rounded-md shadow-lg h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="text-white text-lg font-bold">
+                    {img.codeName}
+                  </span>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
