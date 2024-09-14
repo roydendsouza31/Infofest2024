@@ -8,6 +8,9 @@ import BGMI from "../assets/images/events/BGMI.webp";
 import fifa from "../assets/images/events/fifa22.webp";
 import counterstrike from "../assets/images/events/Counterstrike.webp";
 import UI from "../assets/images/events/UIUX.webp";
+import debate from "../assets/images/events/techdebate.webp";
+import CTF from "../assets/images/events/CTF.webp";
+import Coding from "../assets/images/events/LevelUpCoding.webp";
 
 const Events = () => {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
@@ -21,6 +24,9 @@ const Events = () => {
     { src: BGMI, category: "GAMING", title: "BGMI Tournament" },
     { src: fifa, category: "GAMING", title: "FIFA 22" },
     { src: counterstrike, category: "GAMING", title: "Counterstrike" },
+    { src: debate, category: "OFFLINE", title: "tech debate" },
+    { src: CTF, category: "ONLINE", title: "Capture the flag" },
+    { src: Coding, category: "ONLINE", title: "Level up coding" },
   ];
 
   const filteredImages =
