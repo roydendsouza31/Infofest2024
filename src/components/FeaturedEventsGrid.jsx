@@ -18,26 +18,32 @@ export default function FeaturedEventsGrid() {
     {
       event: 'Hackthon',
       image: 'Hackthon.webp',
+      slug: 'hackathon'
     },
     {
       event: 'CTF',
       image: 'CTF.webp',
+      slug:'CTF'
     },
     {
       event: 'Level Up Coding',
       image: 'LevelUpCoding.webp',
+      slug:'LevelUpCoding'
     },
     {
       event: 'Line Follower',
       image: 'LineFollower.webp',
+      slug:'LineFollower'
     },
     {
       event: 'UI UX',
       image: 'UIUX.webp',
+      slug:'UIUX'
     },
     {
       event: 'Tech Debate',
       image: 'techdebate.webp',
+      slug:'techdebate'
     },
   ]
 
@@ -125,7 +131,7 @@ export default function FeaturedEventsGrid() {
 
 const Card = (event,direction) => {
   return (
-    <Link to={`/events/${event.event}`}>
+    <Link to={`/events/${event.slug}`}>
       <motion.div
         variants={fadeIn(direction, 0.1)}
         initial="hidden"

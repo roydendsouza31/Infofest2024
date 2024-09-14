@@ -1,24 +1,24 @@
+// NOTE : THE PHONE NUMBERS , DATES, VENUES , TIME  , PRICES NEEDS TO BE CHANGED
 const events = [
   {
-    slug: "Hackathon",
-    title: "Hackathon (24-hours)",
+    slug: "hackathon",
+    title: "Hackathon - Hacking for a Resilient Future",
     codeName: "Hackathon",
-    description: "Unleash your intelligence and make an impact at our hackathon - where innovation meets action!",
+    description: "This hackathon aims to foster innovative solutions for a resilient future. Participants will work in teams to develop open-source projects that address sustainability challenges.",
     image: "/Hackthon.webp",
-    rules: `Members per team: 2-3 (cross college teams are allowed)
-    No development may start before the actual date and time of the event. The development must start at the official start time of the event.
-    The utilization of non-coding and AI assistive tools such as ChatGPT, Copilot, and Webflow are prohibited.
-    To ensure a level field for all contestants, all code must be created only at the hackathon. You are permitted to use publicly developed and openly licensed APIs and SDKs for your project.
-    A team can submit only one entry for the hackathon. Participation at the hackathon is subject to a “per-team” basis meaning you are not allowed to be on more than one team at the event.
-    All intellectual property conceived and developed during the hackathon must adhere to the principles of open-source and be submitted through the Github platform.
-    There may be an optional online screening round depending on the number of entries.
-    The problem statements will be released at the venue.
-    The problem statements will be centered around the theme of “Sustainable Development Goals”.
-    Teams have to carry their own laptops/hardware.
-    Wi-Fi access and power points will be available.
-    Refreshments will be provided throughout the event.
-    The teams are free to take breaks in between.
-    Teams are not allowed to leave the venue until the end of the hackathon.`,
+    rules: `*Teams of 2-3 members (cross-college teams allowed).
+* Only one entry per team is allowed.
+* Participants must bring their own laptops/hardware.
+* Participants cannot be on more than one team.
+* No development can start before the event's official start time.
+* All intellectual property developed during the hackathon must be open-source and submitted via GitHub.
+* All code must be created at the hackathon, with the exception of publicly developed and openly  licensed APIs and SDKs.
+* An online screening round may be conducted depending on the number of entries.
+* Problem statements will be released at the venue.
+* Teams cannot leave the venue until the end of the hackathon.
+* Wi-Fi access and power points will be available.
+* The concerned authority is not responsible for any belongings lost or stolen.
+`,
     date: "2024-12-10",
     end_date: "2024-12-11",
     time: {
@@ -27,34 +27,57 @@ const events = [
     },
     coordinators: [
       {
-        name: "Joseito Fernandes",
-        phone: "+91 9637352760",
-        role: "Co-ordinator",
-        image: "/images/coordinators/joseito.jpg"
+        name: "Divij Pirankar",
+        phoneNumber: "1234567890",
+        role: "Lead Coordinator",
+        image: "/divij_pirankar.webp"
       },
       {
-        name: "Savio Silvera",
-        phone: "+91 9637196041",
-        role: "Co-ordinator",
-        image: "/images/coordinators/savio.jpg"
+        name: "Samson Surin",
+        phoneNumber: "1234567891",
+        role: "Co-Coordinator",
+        image: "/samson_surin.webp"
+      },
+      {
+        name: "Prajwath Gowda",
+        phoneNumber: "1234567892",
+        role: "Co-Coordinator",
+        image: "/prajwath_gowda.webp"
       }
     ],
-    judgingCriteria: 'The judging process will be conducted in three rounds: \nThe first round will evaluate the ideation. \nThe second round will assess the progress made. \nThe final round will involve the presentation of the solution.',
+    judgingCriteria: `* The judging process will be conducted in three rounds: 
+    * The first round will evaluate the ideation. 
+    * The second round will assess the progress made. 
+    * The final round will involve the presentation of the solution.`,
     prize: "Rs 30000/-",
     entryFee: 'FREE',
     category: "Offline",
-    venue: "Computer Science & Technology (Office Block Class)",
-    lat: 15.461918843356294,
-    lng: 73.83334799103537,
-    form: "https://forms.gle/GNjSHw8vxUpeJVkq5",
+    venue: "GBS",
+    form: "Provided soon",
   },
   {
     slug: "CTF",
-    codeName: "CTF",
+    codeName: "CyberQuest",
     title: "Capture The Flag",
-    description: "Solve puzzles and find hidden clues to discover the flag. Clues can be hidden anywhere. Each flag will earn you points. So sharpen your minds and get ready to do some digging.",
+    description: "An engaging online Capture The Flag (CTF) competition designed to test participants' cybersecurity skills. Participants will solve challenges across various categories, aiming to unmask the elusive ShadowNet.",
     image: "/CTF.webp",
-    rules: 'PREREQUISITES: Laptop/PC with a good internet connection, Python (may use online python compilers) Linux terminal. \nMembers per team: 1-3. \nCTF will be hosted online making it possible to participate from any location. \nTeam members must give their real names, usernames going to be used for competition, personal email id, and phone numbers in the registration form to verify their identities and to collect prizes. \nParticipants/Teams are not allowed to carry out any attacks on the CTF infrastructure or on other teams/individuals. \nNo DoS/DDoS/BruteForcing/Automated Scans or any other practice generating any large amount of traffic by any other means on any challenges and the contest infrastructure. It is not permitted and is never intended in any challenge. \nAny kind of malpractices against any challenge or against the platform will result in the disqualification of the team. \nSharing the flags/solutions/writeups with anyone outside of your team when the competition is live is strictly prohibited. \nCTF organizers retain the right to amend any existing rules or introduce new rules at any time before/during/after the contest. Any such rules must be followed by all the members of each team. \nIf you find any flaws in the CTF infrastructure, you have to report that to the organizing team immediately instead of exploiting it or sharing/disclosing it with others through any means. \nBy participating in this contest, you agree that you have read the above rules and fully agree to adhere to them. \nWe may add/remove/modify the challenges during the contest. \nAny further updates will also be shared through our official channels. \nThe decision of the organizing team will be final. \nIf anyone is found to break the above mentioned rules, the whole team will be disqualified and removed from the event. We may also disclose your team name, members, and IP if such malpractices happen.',
+    rules: `Participants must have a basic understanding of programming and cybersecurity
+concepts. Open to first time CTF players as well.
+* Points are awarded based on the difficulty of the challenges solved and the
+number of flags captured. The team with the most solves and highest points
+wins. Decision of coordinators will be considered final.
+* Teams must submit their solutions within the given time frame. Late submissions
+will not be considered.
+* Teams can ask for hints with each hint leading to a specified deduction of points
+from the team’s total score.
+* Collaboration with other teams is strictly prohibited. Any form of
+communication between teams regarding the challenges will result in
+disqualification.
+* Teams are expected to compete ethically. Any form of cheating, such as using
+unauthorized tools or scripts or performing DOS or DDOS, will result in
+immediate disqualification.
+* In case of technical difficulties, teams must report immediately to the event
+coordinator. The coordinator's decision on any disputes or issues will be final.`,
     date: "2024-12-10",
     time: {
       from: "11:00 AM",
@@ -62,501 +85,435 @@ const events = [
     },
     coordinators: [
       {
-        name: "Sanket Narvekar",
-        phone: "+91 8975195781",
+        name: "Shannon Sequeira ",
+        phone: "+91 7249369779",
         role: "Co-ordinator",
-        image: "/images/coordinators/sanketN.jpg"
+        image: "/images/coordinators/shannon.jpg"
       },
       {
-        name: "Adroy Fernandes",
-        phone: "+91 9623321113",
+        name: "Allieah Ferrao ",
+        phone: "+91 7507652568",
         role: "Co-ordinator",
-        image: "/images/coordinators/adroy.jpg"
+        image: "/images/coordinators/.jpg"
       }
     ],
     judgingCriteria: 'At the end of the CTF, the team with the highest score on the scoreboard will be declared the winner. \nIn case the score is equal, the first team (in a shorter time) to reach the score is considered as first.',
     prize: "Rs 8000/-",
     entryFee: 'FREE',
     category: "Online",
-    venue: "Online",
+    venue: "BGS 1",
   },
   {
-    slug: "levelUpCoding",
+    slug: "LevelUpCoding",
     title: "Level Up Coding",
-    codeName: "Cyber Trials",
-    description: "Dare to crack the levels with increasing difficulty and show off your proficiency in diverse languages in this event. This is a fight against time to reach the top.",
-    image: "/Level Up Coding.webp",
-    rules: `Members per team: 1-2
-    Each level of the competition will require the participant to complete a coding challenge using a different programming language. Offline documentation will be provided for each language.
-    Every level will have elimination as well as a higher degree of difficulty.
-    Participants are not allowed to communicate with anyone outside the team or use any other resource(internet/phones) during the competition. Any violation of this rule will result in disqualification`,
-    date: "2024-12-11",
+    codeName: "LevelUpCoding",
+    description: "Embark on a thrilling coding adventure with Level Up Coding, an event designed to push your programming skills to new heights. In this immersive experience, you'll face a series of challenges that increase in difficulty, each utilizing a different programming language. From solving foundational problems to tackling complex scenarios, you'll need to adapt and showcase your expertise across a diverse set of languages.",
+    image: "/LevelUpCoding.webp", // Replace with actual image path
+    rules: `
+      * Each team should have 1 or 2 members.
+      * Each level of the event will consist of three stages. Each step will contribute to the bigger picture of the problem (e.g., hangman, for the first step set up the game with a target word, guessed letters, and remaining attempts. Then, implement functionality to process letter guesses, update the display with correct guesses, and track attempts. And at last, create a game loop to handle user input, check win/loss conditions, and manage multiple rounds of play.)
+      * Offline documentation will be provided for each language. No internet will be provided during the event hours.
+      * Participants can progress to a higher level if they have at least completed the first 2 steps from the previous level.
+      * Participants are not allowed to communicate with anyone outside the team. Any violation of this rule will result in disqualification.`,
+    date: "2024-12-10", // Assuming a different date for this event
     time: {
       from: "10:00 AM",
-      to: "03:00 PM"
+      to: "05:00 PM"
     },
     coordinators: [
       {
-        name: "Charlton Dias",
-        phone: "+91 9763145456",
-        role: "Co-ordinator",
-        image: "/images/coordinators/charlton.jpg"
+        name: "Vijay Kumar Oli",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/vijay_kumar_oli.webp" // Replace with actual image path
       },
       {
-        name: "Baban Gawas",
-        phone: "+91 8669054047",
-        role: "Co-ordinator",
-        image: "/images/coordinators/baban.jpg"
+        name: "Shreyas Bhagkar",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/shreyas_bhagkar.webp" // Replace with actual image path
       }
     ],
-    judgingCriteria: 'Selection will be based on the completion time and accuracy of the code.',
-    prize: "Rs 5500/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "MCA Lab 2 (Block C, SEOAS)",
-    lat: 15.46123667146104,
-    lng: 73.83270525019185,
+    judgingCriteria: `
+      * Correctness: Accuracy of the solution
+      * Code quality: Clarity, readability, and adherence to best practices
+      * Robustness: Handling of edge cases and potential errors
+      * Time remaining: In case of a tie, time taken to complete all the challenges will be taken into account.`,
+    venue: "GBS 2",
+    prize: "Not Applicable", // No prizes for info talks
+    category: "Offline"
   },
   {
     slug: "LineFollower",
     title: "Line Follower",
-    codeName: "Line Bot Strafe",
-    description: "Teams must create an autonomous robot that can navigate a maze by following a black line and keeping track of directions. The bot must navigate the maze from the starting point to the ending point in the shortest amount of time while analyzing the path during the run.",
-    image: "/LineFollower.webp",
-    rules: `Members per team: 1-3 \nRobot must be submitted 1hr prior to the event to the volunteers. \nThe robot finishing the area in the least time will be declared the winner. \nMaximum 3 touches allowed (each touch +10 sec). \nOnly 1 skip from a checkpoint is allowed (+30 sec) in case of any issue. \nAny deviation from the main line will lead to placing the robot back to the previous checkpoint. 
-    *ROUNDS: \nParticipants will enter 1 qualification round. \nQualifying teams will be selected for the final. 
-    *ARENA: \nThe arena will have black stripes consisting of acute, obtuse, right angle, discontinuities and curves. \nThere will be multiple checkpoints. \nThe width of stripes will be 3cm. 
-    *Bot Specifications: \nRobot must not exceed following specifications: Length:25cm, Width:25cm, Height:20cm, Weight:5kg, Max voltage: 12v, Microcontroller : Arduino or RaspberryPi.
-    * ‎
-    * ‎
-    Readymade robots are not allowed. \nBots must be fully autonomous and must be started once with only 1 onboard switch. \nParticipants are expected to carry spare batteries, spare parts, repair kits etc. \nIncase of any issues with the robot during the race participants will be disqualified, however before the race they may fix any issues. \nInterfering with other participant's robots on and off the track, Damaging/Modifying the Arena as a participant or by a participant's robot or any action done towards harming the competition or other participants will be met with disqualification`,
-    date: "2024-12-10",
+    codeName: "LineFollower",
+    description: "Teams must create an autonomous robot that can navigate a maze by following a white line and keeping track of directions. The bot must navigate the maze  from the starting point to the ending point in the shortest amount of time while analyzing the path during the run.",
+    image: "/LineFollower.webp", // Replace with actual image path
+    rules: `
+      * Team Members: 1-3
+      * Submission: Robot must be submitted 1 hour prior to the event to the volunteers.
+      * Winner: The robot finishing the maze in the least time will be declared the winner.
+      * Touch Penalty: Maximum of 3 touches allowed, each touch adds 10 seconds to the total time.
+      * Skip Penalty: Only 1 skip from a checkpoint is allowed, adding 30 seconds to the total time, in case of any issue.
+      * Deviation Penalty: Any deviation from the main line will lead to placing the robot back to the previous checkpoint.`,
+    date: "2024-12-11", // Assuming a different date for this event
+    end_date: "2024-12-11", // Assuming a single day event
     time: {
       from: "10:00 AM",
-      to: "03:00 PM"
+      to: "05:00 PM"
     },
     coordinators: [
       {
-        name: "Shreevesh Naik",
-        phone: "+91 9623215078",
-        role: "Co-ordinator",
-        image: "/images/coordinators/shreevesh.jpg"
+        name: "Raunak Haldankar",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/raunak_haldankar.webp" // Replace with actual image path
       },
       {
-        name: "Baban Gawas",
-        phone: "+91 8669054047",
-        role: "Co-ordinator",
-        image: "/images/coordinators/baban.jpg"
+        name: "Gajanan Mathkar",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/gajanan_mathkar.webp" // Replace with actual image path
       }
     ],
-    judgingCriteria: '',
-    prize: "Rs 4500/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "Goa Business School (Ground Floor)",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024,
+    judgingCriteria: `
+      * The robot finishing the maze in the least time will be declared the winner.`,
+    prize: "Not provided", // No prizes for info talks
+    venue: "GBS 2",
+    category: "Offline"
   },
   {
-    slug: "bgmi",
-    title: "BGMI",
-    codeName: "Cyber Strike",
-    description: "Assemble your team and show your skills, teamwork, and strategies to beat the opponents.",
-    image: "/BGMI.webp",
-    rules: 'Members per Team : 4 \nCross college teams are allowed \nEach participant must have a valid BGMI account \nMaps : Erangel, Miramar, Sanhok, Livik \nAll participant are strictly required to be present at the venue',
-    date: "2024-12-11",
+    slug: "DesignDuel",
+    title: "Design Duel",
+    codeName: "DesignDuel",
+    description: "The event has 3 levels: *Level 1:* Css battle Users will be provided with reference CSS designs and its upto them to mimic it as closely as possible through HTML,CSS Responsive Design in Figma Objective: Test participants’ ability to design for different screen sizes and understand responsive design principles using Figma. Level 2:Debug CSS code. The quickest to solve the issues progresses to the next round. (Time limit: 30 minutes) Level 3:Rapid Prototyping. Participants have a very limited time (e.g., 30 minutes) to create a quick prototype based on a surprise prompt. This tests their ability to think quickly and efficiently.",
+    image: "/DesignDuel.webp", // Replace with actual image path
+    rules: `
+      1. Maximum 2 teams from each College and 2 members in a team
+      2. Laptops need to be carried.
+      3. Figma and VS Code should be installed
+      4. No internet connection will be provided for the coding sections.
+      5. You cannot use code generated by Figma.
+      6. Elimination will take place after the second round.
+      7. Judging criteria:
+        - Design relevance to the problem statement
+        - Use of proper design principles
+        - Usability of the website
+        - Clean and readable code
+        - Responsiveness and adaptability of the design
+      8. Bonus points for including appropriate animations, styling, and effects in your design.
+      9. The use of external libraries or frameworks is not permitted; only vanilla HTML, CSS`,
+    date: "2024-12-10", // Assuming a different date for this event
     time: {
       from: "10:00 AM",
-      to: "03:00 PM"
+      to: "05:00 PM"
     },
     coordinators: [
       {
-        name: "Suyog Chari",
-        phone: "+91 7768984419",
-        role: "Co-ordinator",
-        image: "/images/coordinators/suyog.jpg"
+        name: "Alishka Fernandes",
+        phone: "", // Random 10 digit phone number
+        role: "Lead Coordinator",
+        image: "/alishka_fernandes.webp" // Replace with actual image path
       },
       {
-        name: 'Aryan Kushwaha',
-        phone: '+91 84119 32637',
-        role: 'Co-ordinator',
-        image: '/images/coordinators/aryan.jpg'
-      }
-    ],
-    judgingCriteria: '',
-    prize: "Rs 6000/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "Goa Business School (Annexure)",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024,
-    form: 'https://docs.google.com/forms/d/e/1FAIpQLSeJs7ppSHcjucF0wtbUfyyCKPfSakmnfrdd_rtQVarQCjyYdg/viewform?usp=sf_link'
-  },
-  {
-    slug: "missingPeripherals",
-    title: "Missing Peripherals",
-    codeName: "Astral coder",
-    description: "Missing Peripherals is a technical competition designed to test participants' skills in working with computers and technology under challenging conditions. Participants must complete technical tasks within a set time limit using only the available peripherals and showcase technical proficiency under pressure.",
-    image: "/missing peripherals.webp",
-    rules: 'Members per team: 1-2 \nRounds: The contest will be divided into Three rounds and in each round one of the peripheral (Monitor/ ?/ ?) will be missing and participants will have to perform the given task. \nRound 1: Mind sight \nIn this round, The participant will have to code a problem with their monitor turned off. Points will be awarded based on the amount of completion of code within the time limit and the least number of errors. \nRound 2: Surprise \nRound 3: Surprise',
-    date: "2024-12-10",
-    time: {
-      from: "10:00 AM",
-      to: "01:00 PM"
-    },
-    coordinators: [
-      {
-        name: "Sandhya Chari",
-        phone: "+91 8830736146",
-        role: "Co-ordinator",
-        image: "/images/coordinators/sandhya.jpg"
+        name: "Mark Fernandes",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/mark_fernandes.webp" // Replace with actual image path
       },
       {
-        name: "Shaun Barreto",
-        phone: "+91 7720958269",
-        role: "Co-ordinator",
-        image: "/images/coordinators/shaun.jpg"
-      }
-    ],
-    judgingCriteria: 'The submission will be evaluated based on the accuracy and completion time. The judges will also consider the overall performance. Participant with the highest points will be the winner.',
-    prize: "Rs 3500/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "MCA Lab 2 (Block C, SEOAS)",
-    lat: 15.46123667146104,
-    lng: 73.83270525019185,
-  },
-  {
-    slug: "UIUX",
-    title: "UI / UX",
-    codeName: "Interface Rumble",
-    description: " It is an opportunity for designers to demonstrate their ability to create functional, visually appealing, and user-friendly designs that meet the specific requirements of the competition.",
-    image: "/UI UX.webp",
-    rules: 'Members per team: 1 \nParticipants are expected to bring their own devices but for some exceptions devices will be provided. \nFigma must be installed. \nParticipants should only use figma to design, No other platform will be allowed. \nNo copying of design or related stuff from the internet. Any malpractice detected will result in direct disqualification.',
-    date: "2024-12-10",
-    time: {
-      from: "10:00 AM",
-      to: "03:00 PM"
-    },
-    coordinators: [
-      {
-        name: "Udesh Arlekar",
-        phone: "+91 9158807160",
-        role: "Co-ordinator",
-        image: "/images/coordinators/udesh.jpg"
+        name: "Rahul Bandekar",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/rahul_bandekar.webp" // Replace with actual image path
       },
       {
-        name: "Amay Gawas",
-        phone: "+91 9168915331",
-        role: "Co-ordinator",
+        name: "Sachin Kumar",
+        phone: "",
         image: "/images/coordinators/amay.jpg"
       }
     ],
-    judgingCriteria: "How creative and innovative the design is in solving the problem and meeting user needs. \nUser experience, including ease of usage, intuitive, and interactive. \nVisual appeal, aesthetics, and use of color, typography, imagery, and other graphic design elements. \nAdherence to the problem statement.",
+    judgingCriteria: "not provided",
     prize: "Rs 4000/-",
     entryFee: 'FREE',
     category: "Offline",
     venue: "Goa Buisness School (Lab 3)",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024,
   },
   {
-    slug: "reel-it",
-    title: "Reel It",
-    codeName: "Vid cred",
-    description: "We are calling all aspiring content creators to showcase their creativity through reels.",
-    image: "/vlogging.webp",
-    rules: `Members per team: 1-3
-    Reel should be of min 30sec to max 90sec
-    Reel should cover glimpses of every event
-    Team should shoot the events on the day 1 and submit it on the next day before 12pm
-    Reel should contain 10-20sec of sponsor advertisement`,
-    date: "2024-12-10",
+    slug: "SciFiReelChallenge",
+    title: "Sci-Fi Reel Challenge",
+    codeName: "SciFiReelChallenge",
+    description: "Showcase your creativity and craft a science fiction story in just 90 seconds. Tell a compelling story that captures the essence of sci-fi. Use VFX to enhance your reel.",
+    image: "/SciFiReelChallenge.webp", // Replace with actual image path
+    rules: `
+      * Theme: Science Fiction.
+      * Duration: Maximum of 90 seconds.
+      * Objective: Tell a compelling story that captures the essence of sci-fi. It should feel like a mini-movie.
+      * VFX: The use of visual effects (VFX) is allowed and encouraged to enhance your reel.
+      * Originality: Your story must be original. Any copied or plagiarized content will result in immediate disqualification.
+      * Format: Instagram Reel Format
+      * Submission: Post your reel on Instagram and collaborate with the Infofest page. Make sure your reel includes the event name and your reel's title.`,
+    date: "2024-12-21", // Assuming a different date for this event
+    end_date: "2024-12-21", // Assuming a single day event
     time: {
-      from: "09:30 AM",
-      to: "05:30 PM"
+      from: "10:00 AM",
+      to: "05:00 PM"
     },
     coordinators: [
-      {
-        name: "Nagesh Chari",
-        phone: "+91 9067152654",
-        role: "Co-ordinator",
-        image: "/images/coordinators/nagesh.jpg"
-      },
-      {
-        name: "Rutvik Sawant",
-        phone: "+91 9518765805",
-        role: "Co-ordinator",
-        image: "/images/coordinators/rutvik.jpg"
-      }
+      // No coordinators mentioned for this event
     ],
-    judgingCriteria: 'Uniqueness, creativity and informative',
-    prize: "Rs 4500/-",
-    entryFee: 'FREE',
-    category: "Offline",
+    judgingCriteria: "Not provided", // No judging criteria for info talks
+    prize: "Not provided", // No prizes for info talks
+    category: "Online",
     venue: "Outside Goa Business School Auditorium",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024,
   },
   {
-    slug: "FIFA23",
-    title: "FIFA 23",
-    codeName: "VirTUA-Ball",
-    description: "FIFA is an Esports game simulating football at the highest level. Players will be competing with each other in FIFA 23.",
-    image: "/fifa22.webp",
-    rules: `Members per team: 1
-    PS4
-    Knockout rounds
-    Standard settings
-    5 mins half
-    Game speed will be normal
-    Club and Country Teams only`,
-    date: "2024-12-10",
+    slug: "FIFA",
+    title: "FIFA",
+    codeName: "FIFA",
+    description: "The whole event will be knockout based wherein each participant will have to win their spot in the next knockout round. The Knockout round will include the Round of 16, Quarter Finals, Semi Finals and then followed by the Finals. Prior this if the number of participants exceed 16 than elimination matches will be held to select 16 players for the round of 16 judging for this elimination round will be done on the basis of goal difference That is (Goal For - Goals Against).",
+    image: "/FIFA.webp", // Replace with actual image path
+    rules: `
+      * Game will be FIFA-23
+      * Console used: Play Station 4
+      * Single-elimination.
+      * Game time will be 4 minutes per half till Quarter-Final matches and 6 minutes for Semi-final and the Final.
+      * Game pace will be normal.
+      * No re-entry.
+      * Only official club and country teams allowed (Soccer-aid and Adidas all-star not allowed).
+      * Same team should be used once chosen throughout the tournament.
+      * Custom tactics are allowed.
+      * One minute will be given for team management before the start of the match, at half-time .
+      * In between matches only during Throw-in's, Corner, Player injury or Red card, The player will be allowed to pause to make any changes.
+      * If match is drawn until the 90th minute then direct penalties. No extra-time will be given.`,
+    date: "2024-12-10", // Assuming a different date for this event
     time: {
       from: "10:00 AM",
-      to: "04:30 PM"
+      to: "05:00 PM"
     },
     coordinators: [
       {
-        name: "Suyog Chari",
-        phone: "+91 7768984419",
-        role: "Co-ordinator",
-        image: "/images/coordinators/suyog.jpg"
+        name: "Mark Fernandes",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/mark_fernandes.webp" // Replace with actual image path
       },
       {
-        name: "Aiwinraj K. S.",
-        phone: "+91 7904895106",
-        role: "Co-ordinator",
-        image: "/images/coordinators/aiwinraj.jpg"
+        name: "Ankur Falari",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/ankur_falari.webp" // Replace with actual image path
       }
     ],
-    judgingCriteria: '',
-    prize: "Rs 3000/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "Goa Buisness School (Lab 3)",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024,
-    form: "https://docs.google.com/forms/d/e/1FAIpQLSdQbRSFz9NSJuZ5m1obLcDvw6zkM05_kVwJ_1hE6D7CQ0UIqA/viewform?usp=sf_link",
-    sponsorer: 'Goan Gamer',
-    sponsorerLogo: '/goanGamer.png'
+    judgingCriteria: `
+      * The judging for the elimination round will be done on the basis of goal difference (Goal For - Goals Against).`,
+    prize: "Not provided", // No prizes for info talks
+    venue: "GBS hall",
+    category: "Offline"
   },
   {
-    slug: "quiz",
+    slug: "Quiz",
     title: "Quiz",
-    codeName: "neuro query",
-    description: "Do you think you are the smartest one in the room? test your knowledge in field of general knowledge.",
-    image: "/quiz.webp",
-    rules: 'Rounds : Qualifier, Elimination, FINAL \nMembers per team: 2 \nUse of mobile phones or any electronic device is prohibited. \nEach round would be explained during the quiz. \nThe quiz masters decision would be final and binding. \nTHEME : GENERAL KNOWLEDGE',
-    date: "2024-12-10",
+    codeName: "Quiz",
+    description: "Think beyond the code!!While computer science is important, this quiz will challenge you across a broad spectrum of topics.Show off your wide-ranging knowledge and test your overall versatility, compete with peers from various disciplines, and prove that you're more than just a tech whiz. Come prepared for a well-rounded intellectual challenge!",
+    image: "/Quiz.webp", // Replace with actual image path
+    rules: `Participants must be current students of the participating colleges.
+* Each college can send a maximum of two teams and each team should consist of a maximum 2 members .
+* The quiz will consist of two elimination rounds
+* In the event of a tie, tie-breaker questions will be used to determine the winner.
+* Correct answers will be awarded points. The point value for each question will be announced before the round begins.
+* The quiz will consist of multiple rounds.
+* Participants must adhere to the quizmaster’s instructions at all times.
+* Use of mobile phones, smart devices, or any other means of cheating is strictly prohibited.
+* Any form of misconduct may lead to disqualification of the team.
+* The quizmaster’s decision is final and binding in all matters related to the quiz.
+* Any team found to be using unfair means will be disqualified.
+The Judging criteria will be explained prior to each round as it will differ based on the rounds .
+`,
+    date: "2024-12-10", // Assuming a different date for this event
     time: {
       from: "10:00 AM",
-      to: "03:00 PM"
+      to: "05:00 PM"
     },
     coordinators: [
       {
-        name: "Shaunak Perni",
-        phone: "+91 8625946258",
-        role: "Co-ordinator",
-        image: "/images/coordinators/shaunak.png"
+        name: "Ratna Mandre",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/ratna_mandre.webp" // Replace with actual image path
       },
+      {
+        name: "Shreya Gavli",
+        phone: "",// Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/shreya_gavli.webp" // Replace with actual image path
+      }
+    ],
+    judgingCriteria: "Not provided", // No judging criteria for info talks
+    venue: "GBS 4",
+    prize: "Not provided", // No prizes for info talks
+  },
+  {
+    slug: "Debate",
+    title: "Debate",
+    codeName: "Debate",
+    description: "Debate is an exciting platform for students to showcase their knowledge, critical thinking, and public speaking skills. There will be stimulating conversations among participants about current technological problems, innovations, and trends. This event seeks to promote varied perspectives on tech-related issues, improve communication skills, and cultivate an intellectually curious spirit.",
+    image: "/Debate.webp", // Replace with actual image path
+    rules: `Each team will consist of two members.
+* Topics will be tech-related and provided to the teams just before their turn.
+* Each debate will follow this structure:
+*- Opening Statement (For the motion): 3 minutes
+*- Opening Statement (Against the motion): 3 minutes
+*- Rebuttal (For the motion): 2 minutes
+*- Rebuttal (Against the motion): 2 minutes
+*- Closing Statements (Both sides): 1 minutes each
+* A brief Q&A session may follow each debate, where judges  can ask questions.
+* Participants must maintain decorum and respect at all times.
+* Personal attacks, offensive language, or disrespectful behavior will result in disqualification.
+* Judges decision will be final
+* Electronic devices are not allowed during the debate.
+`,
+    date: "2024-12-11", // Assuming a different date for this event
+    time: {
+      from: "10:00 AM",
+      to: "05:00 PM"
+    },
+    coordinators: [
       {
         name: "Minal Shirodkar",
-        phone: "+91 7391944024",
-        role: "Co-ordinator",
-        image: "/images/coordinators/minal.jpeg"
+        phone: "",// Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/minal_shirodkar.webp" // Replace with actual image path
+      },
+      {
+        name: "Shivani Deshpande",
+        phone: "",
+        role: "Co-Coordinator",
+        image: "/shivani_deshpande.webp" // Replace with actual image path
       }
     ],
-    judgingCriteria: '',
-    prize: "Rs 3500/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "Goa Business School (Auditorium)",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024,
+    judgingCriteria: "Not given", // No judging criteria for info talks
+    prize: "Not provided", // No prizes for info talks
+    venue: "GBS 5",
   },
   {
-    slug: "debate",
-    title: "Debate",
-    codeName: "Crossfire",
-    description: "Get ready for an intense clash of ideas centred around the raging topics in the tech world. With strict time limits and rules in place, each team will present their arguments and counterarguments in a thought-provoking and engaging format.",
-    image: "/tech debate.webp",
-    rules: 'Members per team: 2 \nAll participants must engage in the debate with respect and professionalism towards their opponent. \nParticipants must strictly adhere to the time limits for each round. \nInterruptions or speaking out of turn are strictly prohibited during the debate.',
-    date: "2024-12-10",
+    slug: "BizWiz",
+    title: "Biz Wiz",
+    codeName: "BizWiz",
+    description: "Get ready to dive into the ultimate entrepreneurial challenge! Our Biz Wiz event is your chance to pitch your innovative ideas, products, or services to a panel of seasoned investors and industry experts, just like on Shark Tank! Showcase your creativity, passion, and business acumen to secure funding, mentorship, and take your venture to the next level. Will you emerge as the next Biz Wiz?",
+    image: "/BizWiz.webp", // Replace with actual image path
+    rules: `
+      **Pitch Guidelines:**
+        1. Pitches must be 20 minutes long, followed by 5-10 minutes of Q&A.
+        2. Visual aids like slides, videos, or props are allowed.
+        3. Pitches should cover:
+          - Problem statement
+          - Solution
+          - Market potential
+          - Business model
+          - Competitive advantage
+          - Financial projections (if applicable)
+      **Event/Participation Rules:**
+        1. Each team should consist of 2 members.
+        2. Participants must arrive and report 30 minutes before their scheduled pitch time.
+        3. Avoid having the same team for another parallel ongoing event to avoid clash.
+        4. Each team can submit only one pitch.
+        5. Pitches must be original and owned by the participants.`,
+    date: "2024-12-10", // Assuming a different date for this event
     time: {
       from: "10:00 AM",
-      to: "03:00 PM"
+      to: "05:00 PM"
     },
     coordinators: [
       {
-        name: "Sneharsh",
-        phone: "+91 9168581991",
-        role: "Co-ordinator",
-        image: "/images/coordinators/sneharsh.jpeg"
+        name: "Adriella Vaz",
+        phone: "",// Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/adriella_vaz.webp" // Replace with actual image path
       },
       {
-        name: "Om Prabhu",
-        phone: "+91 8805564919",
-        role: "Co-ordinator",
-        image: "/images/coordinators/om.jpg"
+        name: "Ayushi Kamrani",
+        phone: "",// Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/ayushi_kamrani.webp" // Replace with actual image path
       }
     ],
-    judgingCriteria: 'Judging will be based on the strength of arguments, evidence presented, and effectiveness of rebuttals.',
-    prize: "Rs 2000/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "Goa Business School (Auditorium)",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024
+    judgingCriteria: `
+      1. Innovation & Creativity: How original and innovative is your product idea?
+      2. Feasibility: Is the product realistic and achievable with current technology or resources?
+      3. Market Potential: How well does the product meet market needs? What is its potential for success?
+      4. Presentation & Communication: How well is the idea communicated? Is the presentation clear, engaging, and persuasive?
+      5. Q&A Handling: How confidently and effectively do you respond to questions from the judges?
+      6. Team dynamics and leadership
+      7. Clarity and persuasiveness of the pitch`,
+    prize: "Not provided", // No prizes for info talks
+    category: "Offline"
   },
   {
-    slug: "businessPitch",
-    title: "Business Pitch",
-    codeName: "biz-wiz",
-    description: "Participants should present their business ideas or startups to a panel of judges, the presentation should  consist of several slides that provide an overview of the business, its market opportunity, revenue model, and any other relevant information.",
-    image: "/businessPitch.webp",
-    rules: `Members per team: 2
-    The pitch must be original.
-    Participants can submit a ppt/pdf and/or video file of their pitch presentation.
-    The participants should adhere to a time limit of 10mins(8 mins presentation + 2 mins questions) and should not exceed the time limit.`,
-    date: "2024-12-10",
+    slug: "Info-Talks",
+    title: "Info Talks",
+    codeName: "InfoTalks",
+    description: "Info Talks is an engaging event aimed at promoting knowledge sharing and discussions on significant topics. Attendees will benefit from presentations by two esteemed guest speakers, supported by a dedicated technical team and volunteers who will ensure the event runs smoothly. This is an excellent opportunity for participants to learn, network, and engage in meaningful discussions.",
+    image: "/InfoTalks.webp", // Replace with actual image path
+    rules: "...", // Information not provided in data
+    date: "2024-12-12", // Date not provided in this event description, assuming a different date
+    end_date: "2024-12-12", // Assuming a single day event
     time: {
       from: "10:00 AM",
-      to: "03:00 PM"
+      to: "05:00 PM"
     },
     coordinators: [
       {
-        name: "Ved Redkar",
-        phone: "+91 9130614140",
-        role: "Co-ordinator",
-        image: "/images/coordinators/ved.jpg"
+        name: "Akanksha Dessai",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/akanksha_dessai.webp" // Replace with actual image path
       },
       {
-        name: "Dhruv Patil",
-        phone: "+91 9011427354",
-        role: "Co-ordinator",
-        image: "/images/coordinators/dhruv.jpg"
+        name: "Vedhangi Fadte",
+        phone: "", // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/vedhangi_fadte.webp" // Replace with actual image path
       }
     ],
-    judgingCriteria: 'Market opportunity. \nProblem statement and solution. \nBusiness model, strategy, and revenue. \nCompetitive advantage and differentiation. \nPitch delivery and effective use of visual aids.',
-    prize: "Rs 4500/-",
-    entryFee: 'FREE',
-    category: "Offline",
-    venue: "Goa Business School Lecture Hall 1 (old)",
-    lat: 15.459461438680943,
-    lng: 73.82432171434024,
+    venue: "GBS hall1",
+
   },
   {
-    slug: "infotalks-1",
-    title: "Pradhan Mantri TB Mukth Bharat Abhiyan | Ayushman Bharat Digital Mission | PCPNDT Act - Beti Bachao Beti Padao an Attempt to Gender Equality",
-    codeName: "Infotalks 1",
-    description: "Come and hear what's brewing in the world of tech from the people at the forefront of the storm.",
-    image: "/ift1.jpeg",
-    resourcePerson: "Dr. Manish Gaunekar, Dr. Shweta Kanekar, Dr. Uma Sadekar",
-    date: "2024-12-10",
+    slug: "InteractiveDashboardCreation",
+    title: "Interactive Dashboard Creation",
+    codeName: "InteractiveDashboardCreation",
+    description: "Interactive Dashboard Creation challenges participants to create an interactive dashboard based on a provided dataset and a set of questions. The goal is to develop a dashboard that can answer at least some percent of the questions effectively. This competition will test your data visualization skills, analytical capabilities, and creativity in presenting data insights.",
+    image: "/InteractiveDashboardCreation.webp", // Replace with actual image path
+    rules: `
+      * Participants Should Carry their own Laptops
+      * Each team will consist of 2-3 members.
+      * Participants will be provided with a dataset and a set of questions upon arrival.
+      * Each team must build a fully interactive dashboard using their preferred tools (e.g., Tableau, Power BI, Dash, etc.).
+      * The dashboard should answer at least 60% of the provided questions.
+      * The time limit for creating the dashboard is 3 hours.
+      * Once the dashboards are complete, each team will present their work to the judges. Presentations should last no longer than 10 minutes.
+      * Judges will ask questions after the presentations.
+      * Participants must work only with the tools and data provided; outside data sources are not permitted.
+      * Judges' decisions are final, and no electronic devices apart from the ones provided for dashboard creation may be used during the event.`,
+    date: "2024-12-10", // Assuming a different date for this event
     time: {
       from: "10:00 AM",
-      to: "11:00 AM"
+      to: "05:00 PM"
     },
-    category: "Offline",
-    venue: "E Block Auditorium, Goa University, Taleigao Goa",
-    lat: 15.458761291922496,
-    lng: 73.82722857240648,
     coordinators: [
       {
-        name: "Sandhya Chari",
-        phone: "+91 8830736146",
-        role: "Co-ordinator",
-        image: "/images/coordinators/sandhya.jpg"
-      },
-      {
-        name: "Mayuresh chodankar",
-        phone: "+91 9167403608",
-        role: "Co-ordinator",
-        image: "/images/coordinators/mayuresh.jpg"
-      },
-      {
-        name: "Ranjana Rajeev",
-        phone: "+91 7887329445",
-        role: "Co-ordinator",
-        image: "/images/coordinators/ranjana.jpeg"
-      },
+        name: "Deep Naik",
+        phoneNumber: Math.floor(Math.random() * 10000000000), // Random 10 digit phone number
+        role: "Co-Coordinator",
+        image: "/deep_naik.webp" // Replace with actual image path
+      }
     ],
+    judgingCriteria: "Not provided", // No judging criteria for info talks
+    prize: "Not provided", // No prizes for info talks
+    category: "Offline"
   },
-  {
-    slug: "infotalks-2",
-    title: "Nature Inspired Optimisation in Machine Learning",
-    codeName: "Infotalks 2",
-    description: "Come and hear what's brewing in the world of tech from the people at the forefront of the storm.",
-    image: "/ift2.jpeg",
-    resourcePerson: "Dr. Damodar Reddy",
-    date: "2024-12-11",
-    time: {
-      from: "10:00 AM",
-      to: "11:00 AM"
-    },
-    category: "Offline",
-    venue: "Block F, GBS Auditorium, Goa University Taleigao, Goa",
-    lat: 15.458761291922496,
-    lng: 73.82722857240648,
-    coordinators: [
-      {
-        name: "Sandhya Chari",
-        phone: "+91 8830736146",
-        role: "Co-ordinator",
-        image: "/images/coordinators/sandhya.jpg"
-      },
-      {
-        name: "Mayuresh chodankar",
-        phone: "+91 9167403608",
-        role: "Co-ordinator",
-        image: "/images/coordinators/mayuresh.jpg"
-      },
-      {
-        name: "Ranjana Rajeev",
-        phone: "+91 7887329445",
-        role: "Co-ordinator",
-        image: "/images/coordinators/ranjana.jpeg"
-      },
-    ],
-  },
-  {
-    slug: "workshop",
-    title: "Kojo Workshop for H.S.S students",
-    codeName: "workshop",
-    description: "Unleash your inner tech guru in our immersive workshop, where innovation meets expertise and cutting-edge technologies pave the way to a limitless future.",
-    image: "/workshop.webp",
-    date: "2024-12-11",
-    resourcePerson: "Anay Kamat (Lead Software Consultant - Equal Experts)",
-    time: {
-      from: "10:00 AM",
-      to: "04:00 PM"
-    },
-    category: "Offline",
-    venue: "Computer Science & Technology (Office Block Lab 1)",
-    lat: 15.461918843356294,
-    lng: 73.83334799103537,
-    coordinators: [
-      {
-        name: "Vignesh Haldankar",
-        phone: "+91 8796924987",
-        role: "Co-ordinator",
-        image: "/images/coordinators/vignesh.jpg"
-      },
-      {
-        name: "Saish Sawant",
-        phone: "+91 7796894249",
-        role: "Co-ordinator",
-        image: "/images/coordinators/saish.jpg"
-      },
-      {
-        name: "Harshal Gosawi",
-        phone: "+91 9359192032",
-        role: "Co-ordinator",
-        image: "/images/coordinators/harshal.jpg"
-      },
-    ],
-  },
+
 ];
 
 const getEvent = (slug) => events.find(event => event.slug === slug)
