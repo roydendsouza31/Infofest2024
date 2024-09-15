@@ -1,40 +1,12 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import events from "../events";
 import line from "../assets/images/vector.svg";
 import { getImageURL } from "../utils/image-util";
-import hackathon from "../assets/images/events/Hackthon.webp";
-import blackbox from "../assets/images/events/blackbox coding.webp";
-import businessPitch from "../assets/images/events/businessPitch.webp";
-import LineFollower from "../assets/images/events/LineFollower.webp";
-import BGMI from "../assets/images/events/BGMI.webp";
-import fifa from "../assets/images/events/fifa22.webp";
-import counterstrike from "../assets/images/events/Counterstrike.webp";
-import UI from "../assets/images/events/UIUX.webp";
-import debate from "../assets/images/events/techdebate.webp";
-import CTF from "../assets/images/events/CTF.webp";
-import Coding from "../assets/images/events/LevelUpCoding.webp";
 
 const Events = () => {
-  const { slug } = useParams();
   const [selectedCategory, setSelectedCategory] = useState("ALL");
 
-  // // Event images array
-  // const eventImages = [
-  //   { src: hackathon, category: "OFFLINE", title: "Hackathon", slug: "hackathon" },
-  //   { src: businessPitch, category: "OFFLINE", title: "Business Pitch", slug: "business-pitch" },
-  //   { src: LineFollower, category: "OFFLINE", title: "Line Follower", slug: "LineFollower" },
-  //   { src: blackbox, category: "ONLINE", title: "Blackbox Coding", slug: "blackbox-coding" },
-  //   { src: UI, category: "ONLINE", title: "UI/UX Design", slug: "ui-ux-design" },
-  //   { src: BGMI, category: "GAMING", title: "BGMI Tournament", slug: "bgmi-tournament" },
-  //   { src: fifa, category: "GAMING", title: "FIFA 22", slug: "fifa-22" },
-  //   { src: counterstrike, category: "GAMING", title: "Counterstrike", slug: "counterstrike" },
-  //   { src: debate, category: "OFFLINE", title: "Tech Debate", slug: "tech-debate" },
-  //   { src: CTF, category: "ONLINE", title: "Capture the Flag", slug: "capture-the-flag" },
-  //   { src: Coding, category: "ONLINE", title: "Level Up Coding", slug: "level-up-coding" },
-  // ];
-
-  // Filtered images based on selected category
   const filteredImages =
     selectedCategory === "ALL"
       ? events
@@ -49,7 +21,7 @@ const Events = () => {
       <div className="relative flex flex-col items-center">
         <img src={line} className="absolute" alt="Line decoration" />
 
-        <div className="flex space-x-10 my-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 my-5">
           {["ALL", "Offline", "Online", "GAMING"].map((category, index) => (
             <button
               key={index}
@@ -65,7 +37,6 @@ const Events = () => {
           ))}
         </div>
 
-        {/* Event Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
           {filteredImages.map((img, index) => (
             <Link key={index} to={`/events/${img.slug}`}>
