@@ -242,7 +242,7 @@ coordinator. The coordinator's decision on any disputes or issues will be final.
   {
     slug: "SciFiReelChallenge",
     title: "Sci-Fi Reel Challenge",
-    codeName: "SciFiReelChallenge",
+    codeName: "Sci-Fi Reel Challenge",
     description: "Showcase your creativity and craft a science fiction story in just 90 seconds. Tell a compelling story that captures the essence of sci-fi. Use VFX to enhance your reel.",
     image: "/SciFiReelChallenge.webp", // Replace with actual image path
     rules: `
@@ -272,7 +272,7 @@ coordinator. The coordinator's decision on any disputes or issues will be final.
     title: "FIFA",
     codeName: "FIFA",
     description: "The whole event will be knockout based wherein each participant will have to win their spot in the next knockout round. The Knockout round will include the Round of 16, Quarter Finals, Semi Finals and then followed by the Finals. Prior this if the number of participants exceed 16 than elimination matches will be held to select 16 players for the round of 16 judging for this elimination round will be done on the basis of goal difference That is (Goal For - Goals Against).",
-    image: "/FIFA.webp", // Replace with actual image path
+    image: "/fifa22.webp", // Replace with actual image path
     rules: `
       * Game will be FIFA-23
       * Console used: Play Station 4
@@ -358,7 +358,7 @@ The Judging criteria will be explained prior to each round as it will differ bas
     title: "Debate",
     codeName: "Debate",
     description: "Debate is an exciting platform for students to showcase their knowledge, critical thinking, and public speaking skills. There will be stimulating conversations among participants about current technological problems, innovations, and trends. This event seeks to promote varied perspectives on tech-related issues, improve communication skills, and cultivate an intellectually curious spirit.",
-    image: "/Debate.webp", // Replace with actual image path
+    image: "/techdebate.webp", // Replace with actual image path
     rules: `Each team will consist of two members.
 * Topics will be tech-related and provided to the teams just before their turn.
 * Each debate will follow this structure:
@@ -401,7 +401,7 @@ The Judging criteria will be explained prior to each round as it will differ bas
     title: "Biz Wiz",
     codeName: "BizWiz",
     description: "Get ready to dive into the ultimate entrepreneurial challenge! Our Biz Wiz event is your chance to pitch your innovative ideas, products, or services to a panel of seasoned investors and industry experts, just like on Shark Tank! Showcase your creativity, passion, and business acumen to secure funding, mentorship, and take your venture to the next level. Will you emerge as the next Biz Wiz?",
-    image: "/BizWiz.webp", // Replace with actual image path
+    image: "/businessPitch.webp", // Replace with actual image path
     rules: `
       **Pitch Guidelines:**
         1. Pitches must be 20 minutes long, followed by 5-10 minutes of Q&A.
@@ -482,7 +482,7 @@ The Judging criteria will be explained prior to each round as it will differ bas
   {
     slug: "InteractiveDashboardCreation",
     title: "Interactive Dashboard Creation",
-    codeName: "InteractiveDashboardCreation",
+    codeName: "Interactive Dashboard Creation",
     description: "Interactive Dashboard Creation challenges participants to create an interactive dashboard based on a provided dataset and a set of questions. The goal is to develop a dashboard that can answer at least some percent of the questions effectively. This competition will test your data visualization skills, analytical capabilities, and creativity in presenting data insights.",
     image: "/InteractiveDashboardCreation.webp", // Replace with actual image path
     rules: `
