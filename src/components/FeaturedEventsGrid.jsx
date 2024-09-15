@@ -36,9 +36,9 @@ export default function FeaturedEventsGrid() {
       slug:'LineFollower'
     },
     {
-      event: 'UI UX',
+      event: 'Design Duel',
       image: 'UIUX.webp',
-      slug:'UIUX'
+      slug:'DesignDuel'
     },
     {
       event: 'Tech Debate',
