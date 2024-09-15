@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react'
 import events from '../events'
 import { useParams } from 'react-router-dom'
 import { getImageURL } from '../utils/image-util';
+import { div } from 'three/examples/jsm/nodes/Nodes.js';
 
 const Event = () => {
   const [filter, setFilter] = useState('details')
@@ -11,7 +12,7 @@ const Event = () => {
     <div className="text-white mt-28 ">
       <div className="text-center text-3xl font-audiowide">EVENTS</div>
 
-      <div className='min-h-[90%] w-[95%] md:w-[90%] p-2 rounded-md mx-auto my-5 md:flex bg-white/10 shadow-lg ring-1 ring-black/5'>
+      <div className='min-h-[90vh] w-[95%] md:w-[90%] p-2 rounded-md mx-auto my-5 md:flex bg-white/10 shadow-lg ring-1 ring-black/5'>
         <div className='md:w-[30%]'>
           <img className='box-border object-cover h-[75%] w-[100%] md:mx-5 md:mt-20 rounded-md ' src={getImageURL(`events${event.image}`)} alt={event.slug} />
         </div>
@@ -56,6 +57,29 @@ const Event = () => {
                 </span>
               ))}
             </div>}
+
+            {filter === 'contact' && 
+            <div className='md:flex justify-around'>
+              {event.coordinators.map((coordinator,index) =>{
+                return(
+                  <div key={index} className=" w-52 p-6 rounded-lg shadow-lg mx-auto">
+                  <img
+                    className="object-cover w-24 h-24 rounded-full shadow mx-auto"
+                    src={getImageURL(`coordinator/${coordinator.image}`) ?getImageURL(`coordinator/${coordinator.image}`) : 'bestoimage'}
+                    alt={coordinator.name}
+                  />
+                  <div className="flex flex-col justify-center mt-4 text-center">
+                    <p className="text-md font-bold text-gray-100">{coordinator.name}</p>
+                    
+                    <p className="text-sm tracking-wide text-gray-300">
+                      {coordinator.phoneNumber}
+                    </p>
+                  </div>
+                  </div>
+                )
+              })}
+              </div>
+              }
 
           </div>
         </div>
