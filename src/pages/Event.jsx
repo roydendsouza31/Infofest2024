@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react'
 import events from '../events'
 import { useParams } from 'react-router-dom'
 import { getImageURL } from '../utils/image-util';
+import bestoimage from '../assets/images/core-team/user.png';
 import { div } from 'three/examples/jsm/nodes/Nodes.js';
 
 const Event = () => {
@@ -65,7 +66,7 @@ const Event = () => {
                   <div key={index} className=" w-52 p-6 rounded-lg shadow-lg mx-auto">
                   <img
                     className="object-cover w-24 h-24 rounded-full shadow mx-auto"
-                    src={getImageURL(`coordinator/${coordinator.image}`) ?getImageURL(`coordinator/${coordinator.image}`) : 'bestoimage'}
+                    src={coordinator.image ?getImageURL(`core-team${coordinator.image}`) : bestoimage}
                     alt={coordinator.name}
                   />
                   <div className="flex flex-col justify-center mt-4 text-center">
