@@ -30,13 +30,13 @@ const events = [
         name: "Divij Pirankar",
         phoneNumber: "1234567890",
         role: "Lead Coordinator",
-        image: "/divij_pirankar.webp"
+        image: ""
       },
       {
         name: "Samson Surin",
         phoneNumber: "1234567891",
         role: "Co-Coordinator",
-        image: "/samson_surin.webp"
+        image: "/Samson.jpg"
       },
       {
         name: "Prajwath Gowda",
@@ -131,7 +131,7 @@ coordinator. The coordinator's decision on any disputes or issues will be final.
         name: "Shreyas Bhagkar",
         phone: "", // Random 10 digit phone number
         role: "Co-Coordinator",
-        image: "/shreyas_bhagkar.webp" // Replace with actual image path
+        image: "" // Replace with actual image path
       }
     ],
     judgingCriteria: `
