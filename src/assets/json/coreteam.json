@@ -1,33 +1,175 @@
 [
-    {
-      "name": "Smruthul",
-      "position": "Co-ordinator",
-      "contact": "",
-      "image": "src/assets/images/core-team/Smruthul.jpg"
-    },
-    {
-      "name": "Ayush",
-      "position": "Co-ordinator",
-      "contact": "",
-      "image": ""
-    },
-    {
-      "name": "Divij Pirankar",
-      "position": ["Web-developer", "hackathon"],
-      "contact": "",
-      "image": ""
-    },
-    {
-      "name": "Sanket Mhammal",
-      "position": "Good guy",
-      "contact": "",
-      "image": "src/assets/images/core-team/Sanket_Mhammal.jpg"
-    },
-    {
-      "name": "Samson Surin",
-      "position": "Backend hunter",
-      "contact": "",
-      "image": "src/assets/images/core-team/Samson.jpg"
-    }
+  {
+        "position": "Student Co-ordinator",
+        "name": "Smruthul M S",
+        "Course": "MCA",
+        "contact": "9511618463",
+        "Email": "mca.5@unigoa.ac.in"
+       },
+       {
+        "position": "Student Co-coordinator",
+        "name": "Aashutosh Prabhu",
+        "Course": "MScI",
+        "Email": "msci.0@unigoa.ac.in"
+       },
+       {
+        "position": "Treasurer",
+        "name": "Ayush Naik",
+        "Course": "MCA"
+       },
+       {
+        "position": "Asst. Treasurer",
+        "name": "Shreyas Bagkar",
+        "Course": "MCA"
+       },
+       {
+        "position": "Fundraisers",
+        "name": " Shaunak ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Fundraisers",
+        "name": " Yasin ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Fundraisers",
+        "name": " Om ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Design Head",
+        "name": " Sanket ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Design Head",
+        "name": " Prapti ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Design Content Head",
+        "name": " Clive ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Webmasters",
+        "name": " Divij ",
+        "Course": "MSc AI"
+       },
+       {
+        "position": "Webmasters",
+        "name": " Samson ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Food and Beverages",
+        "name": " Pratham ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Food and Beverages",
+        "name": " Mohit ",
+        "Course": "MSc AI"
+       },
+       {
+        "position": "Social media",
+        "name": " Vinay ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Social media",
+        "name": " Shatrugna ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Registration",
+        "name": " Mandar ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Registration",
+        "name": " Riddhi ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Hospitality",
+        "name": " Raunak ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Hospitality",
+        "name": " Pritam ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Logistics",
+        "name": " Saikiran ",
+        "Course": "MSc DS"
+       },
+       {
+        "position": "Logistics",
+        "name": " Anuj ",
+        "Course": "MSc DS"
+       },
+       {
+        "position": "Decoration and Merchandise",
+        "name": " Shreyash ",
+        "Course": "MSc DS"
+       },
+       {
+        "position": "Decoration and Merchandise",
+        "name": " Kaushik ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Decoration and Merchandise",
+        "name": " Kaushik ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Print media",
+        "name": " Sidhant ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Print media",
+        "name": " Monesh ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Print media",
+        "name": " Brian ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Public relations and Media",
+        "name": " Aashutosh ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Public relations and Media",
+        "name": " Sarvadhnya ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Tech team",
+        "name": " Rhythm ",
+        "Course": "MCA"
+       },
+       {
+        "position": "Tech team",
+        "name": " Deep ",
+        "Course": "MScI"
+       },
+       {
+        "position": "Photography",
+        "name": "Shubham",
+        "Course": "MSc AI"
+       }
+
+
   ]
+  
+
   

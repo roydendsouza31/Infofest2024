@@ -10,7 +10,7 @@ import { Meteors } from './ui/meteors';
 import { Typewriter } from 'react-simple-typewriter';
 import { Button } from './ui/moving-border';
 import Countdown from 'react-countdown';
-import logo2 from '../assets/images/infofestlogomk1.svg';
+import logo2 from '../assets/images/if24wordlogo.svg';
 
 const Hero = () => {
   const targetDate = dayjs('2024-08-10');
@@ -66,8 +66,8 @@ const Hero = () => {
             <span className="italic text-xs md:text-sm">Powered By</span>
             <img id="it-dep-logo" src={goait} alt="Goa IT Department" className="h-16 w-auto" />
           </div>
-          {/* <img src={logo} alt="logo" className=" w-80vw md:w-[65vw]" /> */}
-          <img src={logo2} alt="logo" className="md:w-[60vw] scale-[1.5] md:scale-[1.7]" />
+          <img src={logo2} alt="logo" className=" w-80vw md:w-[65vw]" />
+          {/* <img src={logo2} alt="logo" className="" /> */}
         </motion.div>
 
         <motion.div

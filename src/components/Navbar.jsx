@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo2 from '../assets/images/ifwordmk2.svg';
+import logo2 from '../assets/images/if24wordlogo.svg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,8 +30,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center m-auto md:m-0">
-            {/* <img src={logo} alt="Logo" className="h-10 w-18" /> */}
-            <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5] -z-10" />
+            <img src={logo2} alt="Logo" className="h-10 w-18" />
+            {/* <img src={logo2} alt="Logo" className="h-16 w-auto md:px-20 scale-[2] md:scale-[2.5] -z-10" /> */}
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
             {links.map(link => < NavLink
