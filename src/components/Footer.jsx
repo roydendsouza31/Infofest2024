@@ -1,12 +1,10 @@
 import React,{ lazy } from 'react'
 import styled from 'styled-components'
-// import gulogo from '../assets/images/gu_logo_2.png'
+import { FaXTwitter } from "react-icons/fa6";
 import {
   AiOutlineMail,
   AiOutlineInstagram,
-  AiOutlineFacebook,
   AiOutlineYoutube,
-  AiOutlineTwitter,
   AiOutlineLinkedin
 } from 'react-icons/ai'
 import { getImageURL } from '../utils/image-util'
@@ -19,27 +17,22 @@ const ThreadsIcon = (props) =>
 export const social = [
   {
     name: 'Instagram',
-    link: 'https://www.instagram.com/infofest.unigoa/',
+    link: 'https://www.instagram.com/infofest.unigoa',
     icon: AiOutlineInstagram
   },
   {
-    name: 'Facebook',
-    link: 'https://www.facebook.com/profile.php?id=100091512002371',
-    icon: AiOutlineFacebook
-  },
-  {
     name: 'Youtube',
-    link: 'https://www.youtube.com/@InfoFestGoaUniversity',
+    link: 'https://youtube.com/@infofestgoauniversity',
     icon: AiOutlineYoutube
   },
   {
-    name: 'Twitter',
-    link: 'https://twitter.com/infofest_unigoa',
-    icon: AiOutlineTwitter
+    name: 'X',
+    link: 'https://x.com/infofest_unigoa',
+    icon: FaXTwitter
   },
   {
     name: 'LinkedIn',
-    link: 'https://www.linkedin.com/company/infofestunigoa/',
+    link: 'https://www.linkedin.com/in/infofest-goa-university-3a7b4927b',
     icon: AiOutlineLinkedin
   },
   {
@@ -75,7 +68,7 @@ export default function Footer({ ...props }) {
             )}
           </div>
         </div>
-        <div className="row">
+        <div className="row ">
           <React.Suspense fallback={<div />}>
             <Map lat={15.459461438680943} lng={73.82432171434024} />
           </React.Suspense>
@@ -90,6 +83,7 @@ const Wrapper = styled.section`
   margin-top: 4rem;
 
   .container{
+    font-family:audiowide;
     width: 100%;
     display: flex;
     align-items: center;
