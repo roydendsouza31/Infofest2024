@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import StarsCanvas from './components/ui/Star';
 import SplashScreen from './components/ui/SplashScreen';
 import Loading from './components/ui/loading'
+import Brochure from './pages/Brochure';
 
 const Events = React.lazy(() => import('./pages/Events'));
 const Event = React.lazy(() => import('./pages/Event'));
@@ -90,6 +91,11 @@ function App() {
         <Route path='/winners' element={
           <Suspense fallback={<Loading />}>
             <Winners />
+          </Suspense>
+        } />
+        <Route path='/Brochure' element={
+          <Suspense fallback={<Loading />}>
+            <Brochure />
           </Suspense>
         } />
         <Route path='*' element={
